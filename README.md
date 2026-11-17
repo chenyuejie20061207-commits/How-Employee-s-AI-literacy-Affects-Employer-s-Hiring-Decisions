@@ -1,5 +1,110 @@
 # 求职者 AI 素养与企业用工偏好相关性分析——小组协作说明
 
+## 如何 Fork 和提交 PR（四位组员先看）
+
+主仓库地址：<https://github.com/chenyuejie20061207-commits/How-Employee-s-AI-literacy-Affects-Employer-s-Hiring-Decisions>
+
+**请不要直接在主仓库的 `main` 分支上改文件。** 四位组员统一用 Fork + Pull Request 的方式提交，主仓库由陈悦杰合并。
+
+### 1. Fork 仓库
+
+1. 打开上面的主仓库链接；
+2. 点右上角 **Fork**；
+3. 选择自己的 GitHub 账号，等待复制完成。
+
+### 2. 克隆自己的 Fork
+
+```bash
+git clone https://github.com/<你的用户名>/How-Employee-s-AI-literacy-Affects-Employer-s-Hiring-Decisions.git
+cd How-Employee-s-AI-literacy-Affects-Employer-s-Hiring-Decisions
+```
+
+把 `<你的用户名>` 换成自己的 GitHub 用户名。
+
+### 3. 绑定上游主仓库
+
+```bash
+git remote add upstream https://github.com/chenyuejie20061207-commits/How-Employee-s-AI-literacy-Affects-Employer-s-Hiring-Decisions.git
+git remote -v
+```
+
+应该看到：
+
+- `origin`：你自己的 Fork；
+- `upstream`：主仓库。
+
+### 4. 每次改之前先同步主仓库
+
+```bash
+git switch main
+git pull upstream main
+git push origin main
+```
+
+### 5. 新建分支做自己的任务
+
+```bash
+git switch -c task-1-crawl
+```
+
+建议分支名：
+
+| 任务 | 分支名 |
+| :--- | :--- |
+| 虚拟数据库数据爬取 | `task-1-crawl` |
+| 虚拟数据库 AI 素养识别与分类 | `task-2-ai-literacy` |
+| 简历投放与后续数据收集 | `task-3-delivery` |
+| 实验数据分析、PPT 制作 | `task-4-analysis-ppt` |
+
+按 README 的分工改完后，只提交自己负责的文件：
+
+```bash
+git status
+git add 你改的文件
+git commit -m "完成任务一：虚拟数据库数据爬取"
+git push origin task-1-crawl
+```
+
+### 6. 在 GitHub 上开 Pull Request
+
+1. 打开你自己 Fork 的 GitHub 页面；
+2. 点 **Compare & pull request**；
+3. `base repository` 选主仓库，`base branch` 选 `main`；
+4. `head repository` 选你的 Fork，`compare branch` 选你刚才推的分支；
+5. 标题写清任务，描述里写“改了什么、文件放在哪个路径”；
+6. 点 **Create pull request**，等陈悦杰合并。
+
+### 7. 同步更新和处理冲突
+
+如果主仓库更新了，而你的 PR 还没合并：
+
+```bash
+git switch main
+git pull upstream main
+git push origin main
+git switch task-1-crawl
+git merge main
+```
+
+如果有冲突，解决后执行：
+
+```bash
+git add .
+git commit -m "同步上游 main"
+git push origin task-1-crawl
+```
+
+PR 会自动更新，不需要重新开。
+
+### 注意事项
+
+- 提交前先 `git status`，不要不看就 `git add .`；
+- 不要上传 `.codebuddy`、真实简历、真实手机号/邮箱；
+- 大文件（PDF、数据包、PPT 素材）先和陈悦杰确认再传；
+- 一人一个分支，不要几个人共用一个分支。
+
+---
+
 > 本 README 面向除陈悦杰外的四位组员。请先读完本文件，再按第四部分的四项任务认领/确认自己的分工。开题报告全文见 [`求职者AI素养与企业用工偏好相关性分析_开题规划.md`](./求职者AI素养与企业用工偏好相关性分析_开题规划.md)，汇报要求见 [`PRE要求/`](./PRE要求/)。
 
 ---
