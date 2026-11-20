@@ -1,0 +1,376 @@
+from __future__ import annotations
+
+import csv
+import json
+import sys
+from pathlib import Path
+
+import pytest
+
+SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
+sys.path.insert(0, str(SCRIPTS))
+
+from clean import clean_text, deduplicate_records
+from common import (
+    SCHEMA_FIELDS,
+    STRUCTURE_DEIDENTIFICATION_STATUS,
+    city_tier,
+    load_taxonomy,
+    normalize_source_url,
+    normalize_url,
+    sha256_text,
+)
+from crawl import CrawlStopped, PoliteCrawler, StateStore
+from deidentify import mask_pii, scan_pii
+from export import export_csv, read_csv
+from manual_import import UnsafeResumeInput, import_structure_record, validate_abstract_structure
+from parse import classify_job, parse_jd_html
+from preflight import preflight_source
+from validate import validate_records
+
+
+def jd_text(marker: str = "") -> str:
+    return ("负责业务需求沟通、流程建设与跨部门协作，形成清晰文档并持续改进工作质量。" + marker) * 4
+
+
+def make_jd(index: int = 0, job_type: str = "常规型", city: str = "北京") -> dict[str, str]:
+    text = jd_text(str(index))
+    return {
+        "素材ID": f"JD-{index:04d}",
+        "来源类型": "公开招聘平台",
+        "岗位类型": job_type,
+        "行业": "互联网",
+        "城市": city,
+        "字段类型": "岗位JD",
+        "文本内容": text,
+        "采集时间": "2026-01-01T08:00:00Z",
+        "来源记录ID": f"record-{index}",
+        "来源平台": "合成静态页",
+        "来源URL": f"https://jobs{index % 4}.example/jobs/{index}",
+        "其他来源URL": "",
+        "原始岗位ID": f"record-{index}",
+        "采集批次": "synthetic",
+        "原始岗位名称": "行政文员",
+        "企业名称": f"合成企业{index % 40}",
+        "企业性质": "民营企业",
+        "企业规模": "100-499人",
+        "分类理由": "合成测试分类",
+        "文本哈希": sha256_text(clean_text(text)),
+        "重复组ID": "",
+        "脱敏状态": "已脱敏",
+        "人工复核状态": "已通过",
+    }
+
+
+def make_structure(index: int, job_type: str, field_type: str) -> dict[str, str]:
+    text = f"抽象结构：字段顺序为学历层次、专业类别、课程模块；合成编号{index}。"
+    return {
+        **make_jd(index + 1000, job_type, "上海"),
+        "素材ID": f"STRUCT-{index:04d}",
+        "来源类型": "公开简历模板",
+        "字段类型": field_type,
+        "文本内容": text,
+        "原始岗位名称": "",
+        "企业名称": "",
+        "企业性质": "",
+        "企业规模": "",
+        "文本哈希": sha256_text(clean_text(text)),
+        "脱敏状态": STRUCTURE_DEIDENTIFICATION_STATUS,
+    }
+
+
+class FakeResponse:
+    def __init__(self, status_code: int, text: str = "", headers: dict[str, str] | None = None):
+        self.status_code = status_code
+        self.text = text
+        self.headers = headers or {}
+
+
+class FakeClient:
+    def __init__(self, responses: list[FakeResponse]):
+        self.responses = responses
+        self.calls = []
+
+    def get(self, url: str, headers: dict[str, str]):
+        self.calls.append((url, headers))
+        return self.responses.pop(0)
+
+
+def source_config() -> dict:
+    return {
+        "key": "synthetic",
+        "name": "合成来源",
+        "source_type": "公开招聘平台",
+        "base_url": "https://public.example/",
+        "start_urls": ["https://public.example/jobs/1?utm_source=test&ref=required-attribution"],
+        "public_static": True,
+        "preserve_query_params": ["ref"],
+        "terms": {"manual_confirmed": True, "reference": "人工合成确认"},
+    }
+
+
+def test_clean_text_preserves_chinese_and_normalizes_whitespace():
+    assert clean_text("  教育\u3000背景\r\n\r\n\r\n  项目Ａ\x00  ") == "教育 背景\n\n项目A"
+
+
+def test_csv_bom_embedded_newline_comma_and_quotes(tmp_path: Path):
+    path = tmp_path / "合成.csv"
+    record = make_jd()
+    record["文本内容"] = "第一行,含逗号\n第二行含\"引号\"与中文"
+    export_csv([record], path)
+    assert path.read_bytes().startswith(b"\xef\xbb\xbf")
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        raw_rows = list(csv.reader(handle))
+    assert raw_rows[0] == list(SCHEMA_FIELDS)
+    assert len(raw_rows) == 2
+    loaded = read_csv(path)
+    assert loaded[0]["文本内容"] == record["文本内容"]
+    assert tuple(loaded[0]) == SCHEMA_FIELDS
+
+
+def test_pii_scan_and_mask_do_not_leak_values():
+    text = "联系人：张三，手机13812345678，邮箱test@example.com，微信：abcdef1"
+    findings = scan_pii(text)
+    masked, returned = mask_pii(text)
+    assert {item["type"] for item in findings} >= {"联系人姓名", "手机号", "邮箱", "微信号"}
+    assert returned == findings
+    assert "13812345678" not in masked
+    assert "test@example.com" not in masked
+    assert "张三" not in masked
+    assert all("match" not in item for item in findings)
+
+
+def test_exact_dedup_and_near_duplicate_candidates():
+    records = [make_jd(1), make_jd(2), make_jd(3)]
+    records[1]["文本内容"] = records[0]["文本内容"]
+    records[1]["文本哈希"] = records[0]["文本哈希"]
+    records[2]["文本内容"] = records[0]["文本内容"][:-1] + "异"
+    unique, report = deduplicate_records(records, threshold=92)
+    assert len(unique) == 2
+    assert len(report["exact_removed"]) == 1
+    assert len(report["near_duplicate_candidates"]) == 1
+    assert report["near_duplicate_candidates"][0]["score"] >= 92
+    assert all(record["重复组ID"].startswith("NEAR-") for record in unique)
+
+
+def test_classification_priority_and_unmatched():
+    taxonomy = load_taxonomy()
+    job_type, reason = classify_job("软件项目经理", "负责团队管理和 Python 开发", taxonomy)
+    assert job_type == "IT/技术类"
+    assert "优先级" in reason
+    assert classify_job("完全未知岗位", "无关键词", taxonomy)[0] == ""
+
+
+def test_url_normalization_and_city_tiers():
+    assert normalize_url("HTTPS://Example.COM:443/jobs/?b=2&utm_source=x&a=1&ref=tracking#top") == "https://example.com/jobs?a=1&b=2"
+    source = source_config()
+    assert normalize_source_url(source["start_urls"][0], source) == "https://public.example/jobs/1?ref=required-attribution"
+    taxonomy = load_taxonomy()
+    assert city_tier("北京", taxonomy) == "一线城市"
+    assert city_tier("德阳", taxonomy) == "其他城市"
+    assert city_tier("", taxonomy) == "未分层"
+
+
+def test_synthetic_html_parse_and_deidentify():
+    html = """
+    <html><head><meta name='job-id' content='JOB-中文-1'></head><body>
+    <h1 class='title'>Python 开发工程师</h1>
+    <div class='description'>负责平台开发、需求分析、测试与文档建设，联系电话13812345678。
+    需要撰写清晰的技术方案并协作完成交付，持续优化质量与研发流程，参与代码评审和公共模块建设。</div>
+    <span class='industry'>互联网</span><span class='city'>杭州</span>
+    <span class='company'>合成企业</span><span class='nature'>民营企业</span><span class='size'>100-499人</span>
+    </body></html>
+    """
+    source = source_config()
+    source["selectors"] = {
+        "title": "h1.title",
+        "jd": "div.description",
+        "industry": ".industry",
+        "city": ".city",
+        "company": ".company",
+        "company_nature": ".nature",
+        "company_size": ".size",
+        "source_record_id": "meta[name=job-id]",
+    }
+    source["source_record_id_attribute"] = "content"
+    record = parse_jd_html(html, source, source["start_urls"][0], collected_at="2026-01-01T08:00:00Z")
+    assert record["岗位类型"] == "IT/技术类"
+    assert record["城市"] == "杭州"
+    assert record["来源记录ID"] == "JOB-中文-1"
+    assert "13812345678" not in record["文本内容"]
+    assert record["来源URL"] == "https://public.example/jobs/1?ref=required-attribution"
+    assert record["脱敏状态"] == "已脱敏"
+
+
+def structure_input(text: str = "抽象结构：字段顺序为学历层次、专业类别、课程模块。") -> dict[str, str]:
+    return {
+        "来源类型": "公开简历模板",
+        "岗位类型": "常规型",
+        "行业": "互联网",
+        "城市": "北京",
+        "字段类型": "教育结构",
+        "文本内容": text,
+        "来源记录ID": "abstract-1",
+        "来源平台": "合成模板来源",
+        "来源URL": "https://templates.example/item/1",
+        "分类理由": "人工抽象为字段结构",
+    }
+
+
+def test_manual_import_accepts_only_abstract_traceable_structure():
+    record = import_structure_record(structure_input(), collected_at="2026-01-01T08:00:00Z")
+    assert record["素材ID"].startswith("STRUCT-")
+    assert record["人工复核状态"] == "待复核"
+    assert record["脱敏状态"] == STRUCTURE_DEIDENTIFICATION_STATUS
+    assert record["文本内容"].startswith("抽象结构:")
+    with pytest.raises(UnsafeResumeInput):
+        import_structure_record(structure_input("个人简历 姓名：张三 手机13812345678"))
+    with pytest.raises(UnsafeResumeInput):
+        import_structure_record(structure_input("抽象结构：学历层次、专业类别，联系电话13812345678"))
+    bad_source = structure_input()
+    bad_source["来源URL"] = "file:///tmp/private.html"
+    with pytest.raises(ValueError):
+        import_structure_record(bad_source)
+
+
+def test_preflight_missing_robots_and_unconfirmed_terms_are_not_permission():
+    missing = preflight_source(source_config(), FakeClient([FakeResponse(404)]))
+    assert missing["robots_status"] == "missing"
+    assert not missing["allowed"]
+    unconfirmed_source = source_config()
+    unconfirmed_source["terms"]["manual_confirmed"] = False
+    unconfirmed = preflight_source(unconfirmed_source, FakeClient([]))
+    assert not unconfirmed["allowed"]
+    allowed = preflight_source(
+        source_config(), FakeClient([FakeResponse(200, "User-agent: *\nDisallow:")])
+    )
+    assert allowed["allowed"]
+    assert list(allowed["can_fetch"]) == ["https://public.example/jobs/1?ref=required-attribution"]
+
+
+def test_crawler_stops_on_403_without_retry(tmp_path: Path):
+    client = FakeClient([FakeResponse(403), FakeResponse(200, "不应访问")])
+    config = {"request_interval_seconds": 6, "daily_limit": 10, "max_retries": 3}
+    crawler = PoliteCrawler(config, StateStore(tmp_path / "state.json"), client=client, sleep=lambda _: None)
+    with pytest.raises(CrawlStopped):
+        crawler.fetch("https://public.example/jobs/1")
+    assert len(client.calls) == 1
+
+
+def test_forbidden_sources_are_rejected_before_network_and_in_final_data(tmp_path: Path):
+    client = FakeClient([FakeResponse(200, "不应访问")])
+    config = {"request_interval_seconds": 6, "daily_limit": 10, "max_retries": 3}
+    crawler = PoliteCrawler(config, StateStore(tmp_path / "forbidden.json"), client=client, sleep=lambda _: None)
+    with pytest.raises(CrawlStopped):
+        crawler.fetch("https://job.ncss.cn/student/jobs/example/detail.html")
+    assert len(client.calls) == 0
+
+    record = make_jd()
+    record["其他来源URL"] = "https://campus.ncss.cn/jobs/example"
+    report = validate_records([record])
+    assert report["error_counts"]["forbidden_source"] == 1
+
+
+def test_crawler_honors_retry_after_and_captcha_stop(tmp_path: Path):
+    client = FakeClient(
+        [FakeResponse(429, headers={"Retry-After": "12"}), FakeResponse(200, "公开静态内容")]
+    )
+    sleeps = []
+    config = {"request_interval_seconds": 6, "daily_limit": 10, "max_retries": 3}
+    crawler = PoliteCrawler(
+        config, StateStore(tmp_path / "retry.json"), client=client, sleep=sleeps.append
+    )
+    assert crawler.fetch("https://public.example/jobs/1") == "公开静态内容"
+    assert 12 in sleeps
+    assert len(client.calls) == 2
+
+    captcha_client = FakeClient([FakeResponse(200, "请完成验证码"), FakeResponse(200, "不应访问")])
+    captcha = PoliteCrawler(
+        config, StateStore(tmp_path / "captcha.json"), client=captcha_client, sleep=lambda _: None
+    )
+    with pytest.raises(CrawlStopped):
+        captcha.fetch("https://public.example/jobs/2")
+    assert len(captcha_client.calls) == 1
+
+
+def test_crawler_preserves_required_ref_attribution(tmp_path: Path):
+    client = FakeClient([FakeResponse(200, "公开静态内容")])
+    config = {"request_interval_seconds": 6, "daily_limit": 10, "max_retries": 3}
+    crawler = PoliteCrawler(
+        config, StateStore(tmp_path / "attribution.json"), client=client, sleep=lambda _: None
+    )
+    crawler.fetch(
+        "https://public.example/jobs/1?utm_source=remove&ref=required-attribution",
+        preserve_params=["ref"],
+    )
+    assert client.calls[0][0] == "https://public.example/jobs/1?ref=required-attribution"
+
+
+def test_schema_enum_hash_url_time_length_and_pii_validation():
+    record = make_jd()
+    record["岗位类型"] = "不存在的类型"
+    record["来源URL"] = "javascript:alert(1)"
+    record["采集时间"] = "2026-01-01"
+    record["文本内容"] = "太短13812345678"
+    report = validate_records([record])
+    codes = report["error_counts"]
+    for code in ("invalid_enum", "invalid_url", "invalid_timestamp", "invalid_text_length", "pii_residual", "hash_mismatch"):
+        assert code in codes
+    assert not report["passed"]
+    jd_with_structure_status = make_jd(100)
+    jd_with_structure_status["脱敏状态"] = STRUCTURE_DEIDENTIFICATION_STATUS
+    status_report = validate_records([jd_with_structure_status], strict=True)
+    assert status_report["error_counts"]["invalid_enum"] == 1
+    assert status_report["error_counts"]["not_deidentified"] == 1
+
+
+def test_automatic_review_status_is_valid_but_not_human_signoff():
+    record = make_jd()
+    record["人工复核状态"] = "自动校验通过（待人工复核）"
+    normal = validate_records([record], strict=False)
+    assert normal["passed"]
+    strict = validate_records([record], strict=True)
+    assert strict["error_counts"]["review_not_passed"] == 1
+    assert not strict["passed"]
+
+
+def test_stratified_counts_matrix_and_strict_shortage():
+    record = make_jd()
+    report = validate_records([record], strict=False)
+    assert report["passed"]
+    assert not report["target_met"]
+    assert len(report["jd_strata"]) == 16
+    assert len(report["structure_matrix"]) == 16
+    assert report["jd_strata"]["常规型|北京"]["count"] == 1
+    assert "常规型|一线城市" not in report["jd_strata"]
+    other_city = validate_records([make_jd(99, city="杭州")])
+    assert other_city["error_counts"]["unknown_stratum"] == 1
+    strict = validate_records([record], strict=True)
+    assert not strict["passed"]
+    assert strict["error_counts"]["target_gap"] == 34
+    assert not strict["target_met"]
+
+
+def test_full_synthetic_targets_pass_strict_mode():
+    taxonomy = load_taxonomy()
+    job_types = taxonomy["classification_priority"]
+    cities = taxonomy["jd_cities"]
+    records = []
+    index = 0
+    for job_type in job_types:
+        for city in cities:
+            for _ in range(25):
+                records.append(make_jd(index, job_type, city))
+                index += 1
+    field_types = ("教育结构", "实习结构", "项目结构", "技能结构")
+    structure_index = 0
+    for job_type in job_types:
+        for field_type in field_types:
+            for _ in range(5):
+                records.append(make_structure(structure_index, job_type, field_type))
+                structure_index += 1
+    report = validate_records(records, strict=True)
+    assert report["counts"] == {"total": 480, "jd": 400, "structures": 80}
+    assert report["target_met"]
+    assert report["passed"], json.dumps(report["errors"][:5], ensure_ascii=False)
+    json.dumps(report, ensure_ascii=False)

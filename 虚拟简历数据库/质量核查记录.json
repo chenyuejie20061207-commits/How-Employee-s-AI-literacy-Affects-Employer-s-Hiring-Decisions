@@ -1,0 +1,3392 @@
+{
+  "generated_at": "2026-11-20T21:22:44Z",
+  "dataset": {
+    "path": "原始素材_岗位与简历结构.csv",
+    "bytes": 819871,
+    "sha256": "2f4bf065c4d311d3afc33c78ca0c89830e77afd4adfb9b4814405d1fb70475da",
+    "has_utf8_bom": true,
+    "crlf_lines": 481,
+    "lone_lf": 2999
+  },
+  "counts": {
+    "total": 480,
+    "jd": 400,
+    "structures": 80,
+    "by_city": {
+      "北京": 100,
+      "上海": 100,
+      "广州": 100,
+      "深圳": 100
+    },
+    "by_type": {
+      "IT/技术类": 100,
+      "管理类": 100,
+      "非常规认知型": 100,
+      "常规型": 100
+    }
+  },
+  "quality": {
+    "strict": false,
+    "passed": true,
+    "target_met": true,
+    "counts": {
+      "total": 480,
+      "jd": 400,
+      "structures": 80
+    },
+    "targets": {
+      "jd": 400,
+      "structures": 80
+    },
+    "jd_strata": {
+      "IT/技术类|北京": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "IT/技术类|上海": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "IT/技术类|广州": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "IT/技术类|深圳": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "管理类|北京": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "管理类|上海": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "管理类|广州": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "管理类|深圳": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "非常规认知型|北京": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "非常规认知型|上海": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "非常规认知型|广州": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "非常规认知型|深圳": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "常规型|北京": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "常规型|上海": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "常规型|广州": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      },
+      "常规型|深圳": {
+        "count": 25,
+        "target": 25,
+        "met": true
+      }
+    },
+    "structure_matrix": {
+      "IT/技术类|教育结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|实习结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|项目结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|技能结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|教育结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|实习结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|项目结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|技能结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|教育结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|实习结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|项目结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|技能结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|教育结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|实习结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|项目结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|技能结构": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      }
+    },
+    "concentration": {
+      "domains": {
+        "total_named": 400,
+        "unique": 74,
+        "threshold": 0.3,
+        "entries": [
+          {
+            "value": "job.gds.edu.cn",
+            "count": 57,
+            "share": 0.1425,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "www.iguopin.com",
+            "count": 47,
+            "share": 0.1175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "mengniu.zhiye.com",
+            "count": 21,
+            "share": 0.0525,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "wecruit.hotjob.cn",
+            "count": 16,
+            "share": 0.04,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "fibocom.zhiye.com",
+            "count": 16,
+            "share": 0.04,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "insight-med.zhiye.com",
+            "count": 11,
+            "share": 0.0275,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "spicqyxdl.zhiye.com",
+            "count": 10,
+            "share": 0.025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "ccccltd.zhiye.com",
+            "count": 9,
+            "share": 0.0225,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "jssoft.zhiye.com",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "digitalchina.zhiye.com",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "glsc.zhiye.com",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "hairobotics.zhiye.com",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "djbx.zhiye.com",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "qhkyfund.zhiye.com",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "employment.jx.smartedu.cn",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "huafeng.zhiye.com",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "pudutech.zhiye.com",
+            "count": 6,
+            "share": 0.015,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "neweastech.zhiye.com",
+            "count": 6,
+            "share": 0.015,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "fscut.zhiye.com",
+            "count": 6,
+            "share": 0.015,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "job.xiaohongshu.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "www.liepin.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "join.qq.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "job.citicbank.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "nesc.zhiye.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "tyslchinatelecom.zhiye.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "avicsz.zhiye.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "medcaptain.zhiye.com",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "baicgroup.zhiye.com",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "career.cec.com.cn",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "gjzq.zhiye.com",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "app.mokahr.com",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "mornsun.zhiye.com",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "uq1h428xyc.jobs.feishu.cn",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "norincogroupzhaopin.zhiye.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "newland.zhiye.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "orienspace.zhiye.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "sinotrans.zhiye.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "campuske.zhiye.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "www.cqbys.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "gongniu.zhiye.com",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "ronbay.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "genertec.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "jobs.bjbys.net.cn",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "primebot.jobs.feishu.cn",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "agirobot.jobs.feishu.cn",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "gravityxr.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "siasun.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "yhwins2.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "zhaopin.comac.cc",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "sinochem.hotjob.cn",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "sph.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "jobtaikang.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "iwhalecloud1.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "xiaopeng.jobs.feishu.cn",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "huawutang1.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "jovohr.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "sunwodacampus.zhiye.com",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "www.nxbys.cn",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "thad.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "genomics.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "hitrendtech1.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "univista-isg.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "britesemi.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "smec.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "swzc-tech.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "nci.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "www.shixiseng.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "sec.hotjob.cn",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "xd-legacy.jobs.feishu.cn",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "gotion.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "campus.pingan.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "purcotton.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "szkingdom1.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "swaysure.zhiye.com",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          }
+        ],
+        "max_share": 0.1425
+      },
+      "companies": {
+        "total_named": 400,
+        "unique": 145,
+        "threshold": 0.1,
+        "entries": [
+          {
+            "value": "蒙牛乳业",
+            "count": 19,
+            "share": 0.0475,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广和通",
+            "count": 16,
+            "share": 0.04,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北芯生命",
+            "count": 11,
+            "share": 0.0275,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "启源芯动力",
+            "count": 10,
+            "share": 0.025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "多益网络有限公司",
+            "count": 10,
+            "share": 0.025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中交集团",
+            "count": 9,
+            "share": 0.0225,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "金山云",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "神州数码",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "上海银行",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "国联民生证券",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "海柔创新",
+            "count": 8,
+            "share": 0.02,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "大家保险",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "前海开源",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "上海雅尔亨运动服饰有限公司",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "华峰集团",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州数控设备有限公司",
+            "count": 7,
+            "share": 0.0175,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "普渡机器人",
+            "count": 6,
+            "share": 0.015,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "新毅东科技股份有限公司",
+            "count": 6,
+            "share": 0.015,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "柏楚电子",
+            "count": 6,
+            "share": 0.015,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "小红书",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "娇韵诗化妆品(上海)有限公司",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "腾讯",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中信银行",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "东北证券",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国电信天翼视联",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "国光电器股份有限公司",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州东林生物科技有限公司",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中航科创",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "麦科田医疗",
+            "count": 5,
+            "share": 0.0125,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京汇智云科人工智能科技有限责任公司",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京汽车",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "国金证券",
+            "count": 4,
+            "share": 0.01,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "蓝箭航天",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国兵器",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "新大陆科技集团",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "东方空间",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国外运",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "贝壳",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "公牛集团",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州金升阳科技",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东灏仟亿科技集团有限公司",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州哈士奇产品设计有限公司",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州丰赢化工有限公司",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东工美数字文化有限公司",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "长城国际信息技术（深圳）有限公司",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国人寿保险股份有限公司深圳市分公司",
+            "count": 3,
+            "share": 0.0075,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "容百集团",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国通用技术（集团）控股有限责任公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京医疗健康大模型有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "内蒙古蒙牛乳业（集团）股份有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "启元机器人",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "智元",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "万有引力GravityXR",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中冶宝钢技术服务有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "沈阳新松机器人",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "赢合科技",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国商飞",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "上海医药",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "泰康之家",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "浩鲸科技",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "小鹏汽车",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "半亩花田",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东鑫达新材料科技有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "九丰集团",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州双塑新材料有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市三英温泉酒店投资有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市穗丰物业有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "芯屏半导体（深圳）有限责任公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳麦格米特电气股份有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "华润电力控股有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "欣旺达",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳市长帆国际物流股份有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "招商证券股份有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "第一创业证券",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳市威辰电子科技有限公司",
+            "count": 2,
+            "share": 0.005,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "清华大学建筑设计研究院有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "华大BGI",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国联合装备集团有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中建投租赁股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国电子产业工程有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京中纺化工股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京致远知行科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京一商集团有限责任公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "北京中核华辉科技发展有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "钜泉科技",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "合见工软",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "灿芯半导体",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "芯联集成",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中国中化",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "上海申微智创科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "新华保险",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中化能源股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "双串智能",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "上海电气电站集团",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "心动×TapTap",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "国家电投集团钍基能源科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "春秋航空股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中远海运国际货运有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "虹科",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "曼伦",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "国轩高科",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州旺理科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州瑞松智能科技股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "BIGO",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市昊志机电股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "金升阳科技",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "工业和信息化部电子第五研究所",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州汉腾生物科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州震雄装饰工程有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东诚安信会计师事务所（特殊普通合伙）",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广西扬翔集团股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东建研环境监测股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "TCL",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州瑞米数字科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州创视未来文化传播有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州兴趣岛信息科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市万实众网络科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州韦博人力资源服务有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州粤才企业管理咨询有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州智行科教投资有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州远海汽车船运输有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市比玉堂艺术品有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州钧天自动化科技有限责任公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州源尚文化创意有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "泰康人寿保险有限责任公司广东广州从化营销服务部",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州伊的家网络科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东凯迈人力资源集团有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市品臻化妆品有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市穗从冷气服务有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州市南峰水处理工程有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东鑫达新材料科技有限公司广州分公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广州盛飞网络信息安全技术有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "平安银行股份有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "佑驾创新",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "全棉时代",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "中企盈飞（北京）会计服务有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳爱思特实业有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳市骅宇创新科技有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "引时代国际旅行社（深圳）有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳市利星坤平国际货运代理有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "大寰机器人",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "金证科技",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "深圳市宝安区人民医院",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "昇维旭",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          },
+          {
+            "value": "广东德立迅国际货运代理有限公司",
+            "count": 1,
+            "share": 0.0025,
+            "exceeds_threshold": false
+          }
+        ],
+        "max_share": 0.0475
+      }
+    },
+    "gaps": [],
+    "errors": [],
+    "error_counts": {},
+    "row_count_note": "CSV 数据首行对应第 2 行；报告使用素材ID定位"
+  },
+  "review": {
+    "status_counts": {
+      "自动校验通过（待人工复核）": 480
+    },
+    "structure_review_summary": [
+      "ID、岗位类型、字段类型及编号连续，4类岗位×4类字段×5条共80条，16个矩阵单元均为5条；无重复ID、无重复正文。",
+      "各条均为栏目、字段顺序、取舍规则和量化占位方式的抽象描述，不是可识别个人简历正文；未发现真实姓名、电话、邮箱、社交账号、班级、具体企业项目等信息。",
+      "本地PII扫描未命中身份证号、手机号、邮箱、固定电话、QQ号、微信号或联系人姓名；未发现ncss.cn、gaoxiaojob.com、yzu.91job.org.cn及其子域。",
+      "来源平台与URL域名对应一致，来源记录ID中的页面编号与URL基本对应；采集时间格式有效，结构素材的行业、城市、企业字段按约定使用未披露或不适用。",
+      "跨岗位同编号结构存在受控同构现象，技能结构最高文本相似度约0.89，但均有岗位语义改写且低于92%近似重复阈值，不构成需判不通过的过度雷同。",
+      "项目校验器未发现结构素材错误；其报告中的JD数量缺口属于本次仅审查结构素材的预期结果，不计入本文件结论。"
+    ],
+    "jd_excluded": [
+      {
+        "素材ID": "JD-XZB-19058445",
+        "城市": "北京",
+        "原因": [
+          "正文在“4.有 SAP/Oracle/ 用友”处截断，任职要求不完整"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-1735570",
+        "城市": "北京",
+        "原因": [
+          "与JD-XZB-13981352同企业同岗同城重复，后者带职责/资格小标题更完整"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-37276767",
+        "城市": "北京",
+        "原因": [
+          "投递说明“投递专用邮箱A, ,”“企业邮箱:”残缺",
+          "职责编号粘连（“5会议行程的安排”）",
+          "单位简介占全文过半"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-25360468",
+        "城市": "上海",
+        "原因": [
+          "与JD-XZB-24765464同URL、同postId，属同源重复转载，保留排版完整的一条",
+          "正文为单行拼接，可读性较差"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-18580422",
+        "城市": "上海",
+        "原因": [
+          "正文在\"优质文\"处中断，属明显截断",
+          "通篇为招聘宣传语，缺岗位职责与任职要求"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36789079",
+        "城市": "上海",
+        "原因": [
+          "正文将设备维护、质量检验、生产技术员三个不同岗位拼接在一起",
+          "与\"车间生产操作工\"单一岗位名称不符，属拼接错误"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-37276769",
+        "城市": "北京",
+        "原因": [
+          "任职要求出现“1. 1.”重复编号",
+          "投递说明“邮箱A, , B,”残缺",
+          "单位简介占全文过半"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36737207",
+        "城市": "北京",
+        "原因": [
+          "正文为接口字典原文（id/content/shortContent）",
+          "职责仅一句，其余为HTML表格与\\r\\n转义符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-5118265",
+        "城市": "北京",
+        "原因": [
+          "与JD-XZB-1735537同源同文，后者任职资格含学历与经验更完整",
+          "任职资格末项“其他技能(语言、电脑等)”为空"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-37094680",
+        "城市": "北京",
+        "原因": [
+          "正文大面积缺字（“月薪培训期-月元”“五险金”“底红及终奖金”）",
+          "句读与条目编号丢失，职责不可读"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-23704155",
+        "城市": "北京",
+        "原因": [
+          "与JD-XZB-35949922同源同文，后者带【岗位职责】小标题"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8946582",
+        "城市": "北京",
+        "原因": [
+          "与JD-XZB-5118229同源同文，后者带职责/资格小标题",
+          "少量上游编码缺失（3处替换字符），不影响职责与要求判读"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-23704154",
+        "城市": "北京",
+        "原因": [
+          "与JD-XZB-35949923同源同文，后者带【岗位职责】小标题"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-3106721",
+        "城市": "北京",
+        "原因": [
+          "正文为JD-XZB-3106726的子集，仅2条职责，缺厂商配合条款"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-37276768",
+        "城市": "北京",
+        "原因": [
+          "职责首句缺字（“责日常现金收付”）",
+          "任职要求以“.”开头且句读缺失",
+          "投递说明“邮箱A, , B,”残缺"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36788296",
+        "城市": "上海",
+        "原因": [
+          "全文仅平台信息栏（职能类别、招聘人数、专业、地址），无岗位职责与任职要求",
+          "正文仅114字，属摘要级信息"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36838550",
+        "城市": "上海",
+        "原因": [
+          "与JD-XZB-1735619同URL（同一iguopin岗位）重复转载，保留正文完整的一条",
+          "正文尾部在\"乐于分\"处截断"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-3105533",
+        "城市": "广州",
+        "原因": [
+          "与JD-XZB-17754787重复转载"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36838752",
+        "城市": "广州",
+        "原因": [
+          "末尾一句略截断",
+          "二次抽检发现正文在600字处中断，任职要求不完整"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36839062",
+        "城市": "广州",
+        "原因": [
+          "缺具体职责与任职要求",
+          "以培养方案为主"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36838891",
+        "城市": "广州",
+        "原因": [
+          "工作地点为河源，与城市字段不符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-3106379",
+        "城市": "广州",
+        "原因": [
+          "与JD-XZB-36788981重复"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36269490",
+        "城市": "广州",
+        "原因": [
+          "与JD-XZB-17578328重复"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36737492",
+        "城市": "广州",
+        "原因": [
+          "缺岗位职责",
+          "仅通用校招条件"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-17938267",
+        "城市": "广州",
+        "原因": [
+          "末尾略有截断",
+          "二次抽检发现正文在600字处中断，任职要求不完整"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36839245",
+        "城市": "广州",
+        "原因": [
+          "与JD-XZB-36839246重复"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-33801648",
+        "城市": "广州",
+        "原因": [
+          "职责段落重复粘贴",
+          "明显拼接错误"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-17751453",
+        "城市": "深圳",
+        "原因": [
+          "与JD-XZB-36263567同来源URL、同企业同岗位同城重复",
+          "正文无职责与资格小标题，完整度低于保留条"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-30166419",
+        "城市": "深圳",
+        "原因": [
+          "与JD-XZB-36263567同来源URL、同企业同岗位同城重复",
+          "正文缺少职责与任职资格分段，完整度较低"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-1731528",
+        "城市": "深圳",
+        "原因": [
+          "与JD-XZB-3106608正文相似度约99%，同企业同岗位同城重复",
+          "重复组内保留标题与正文对应更直接的JD-XZB-3106608"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8939814",
+        "城市": "深圳",
+        "原因": [
+          "与JD-XZB-37276123同来源URL、同岗位同城重复",
+          "企业名“中国人寿-广发银行”与正文寿险业务不符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-35435951",
+        "城市": "深圳",
+        "原因": [
+          "正文仅招聘人数、需求专业、单位性质与工作地址等元信息",
+          "无任何岗位职责或任职要求表述，非岗位正文"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-21449493",
+        "城市": "深圳",
+        "原因": [
+          "正文未出现深圳工作地点，与郑州企业属地不一致",
+          "来源URL为企业官网首页，无法定位具体岗位页面",
+          "正文仅两句，缺岗位职责细节"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8939787",
+        "城市": "深圳",
+        "原因": [
+          "与JD-XZB-37276124同来源URL、同岗位同城重复",
+          "企业名“中国人寿-广发银行”与正文寿险柜面业务不符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-35878515",
+        "城市": "北京",
+        "原因": [
+          "正文在“网站信息安全,网站运”处截断",
+          "编号混乱（“2, 任职要求 3, 1.”）",
+          "要求混入康复理疗、中医推拿等无关内容"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-10642061",
+        "城市": "上海",
+        "原因": [
+          "正文在600字处\"对获客、转\"中断，任职资格与加分项不完整",
+          "全栈研发职责应归IT/技术类"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437616",
+        "城市": "上海",
+        "原因": [
+          "正文在600字处\"JavaScript、TypeScript\"中断，任职资格不完整",
+          "直播电商全栈研发应归IT/技术类"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36838890",
+        "城市": "广州",
+        "原因": [
+          "工作地点为河源/揭阳，与城市字段不符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-12810028",
+        "城市": "北京",
+        "原因": [
+          "正文在“4、扎实”处截断，任职资格不完整"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8847140",
+        "城市": "北京",
+        "原因": [
+          "正文末尾明显截断，中断于“熟悉 Transformer、大语言模”，任职资格仅剩1条",
+          "与 JD-XZB-8847141 为同岗不同项目版本，正文高度重复"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437617",
+        "城市": "上海",
+        "原因": [
+          "任职资格在“相关技术包括JavaScr”处明显截断，要求不完整",
+          "岗位名为产品工程师，正文为电商交易链路全栈开发，应归IT/技术类"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437618",
+        "城市": "上海",
+        "原因": [
+          "任职资格在“前端包括JavaScript、TypeScript、R”处明显截断",
+          "增长营销方向实为前后端开发岗，现归非常规认知型属错分"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36838894",
+        "城市": "广州",
+        "原因": [
+          "正文写明工作地点为广东省河源市，与城市字段“广州”不一致",
+          "复核抽检确认工作地点为河源，与广州分层不符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36838893",
+        "城市": "广州",
+        "原因": [
+          "正文写明工作地点为广东省河源市，与城市字段“广州”不一致",
+          "复核抽检确认工作地点为河源，与广州分层不符"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36787919",
+        "城市": "深圳",
+        "原因": [
+          "正文只有轮岗福利与性格、外派要求，无任何岗位职责描述",
+          "篇幅短且属泛泛宣传，不构成可用JD"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437619",
+        "城市": "上海",
+        "原因": [
+          "岗位为全栈开发（前端/后端/系统建设），按IT/技术类优先规则应归IT/技术类，现标非常规认知型",
+          "行业标注“风控算法”与正文电商商家/商品/履约业务不符",
+          "正文在“熟悉前端或”处截断，任职资格未完整"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437623",
+        "城市": "上海",
+        "原因": [
+          "岗位为快捷售卖业务前后端/客户端开发，应归IT/技术类，现标非常规认知型",
+          "行业标注“风控算法”与正文C2C二手交易业务不符",
+          "正文在“Go/Java/Pyth”处截断"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437620",
+        "城市": "上海",
+        "原因": [
+          "正文末尾在词中截断（止于“能够独立完成编码、调试和问”），任职资格仅完整给出第1条，第2条起要求缺失",
+          "岗位为企业自有招聘官网Product Engineer（Agent开发方向），实际为研发技术岗，现标非常规认知型应改为IT/技术类"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-8437621",
+        "城市": "上海",
+        "原因": [
+          "正文在“3、”处直接截断，任职资格第3条内容及后续要求全部缺失",
+          "岗位为redshop跨境电商Product Engineer（AI与全栈方向），属研发技术岗，应改判IT/技术类"
+        ]
+      },
+      {
+        "素材ID": "JD-XZB-36788388",
+        "城市": "上海",
+        "原因": [
+          "正文仅为【其他信息】元数据（招聘人数、需求专业、单位规模、工作地址等），无任何工作职责与任职要求描述，不构成有效JD正文"
+        ]
+      }
+    ],
+    "jd_reclassified": [
+      {
+        "素材ID": "JD-XZB-3106728",
+        "from": "非常规认知型",
+        "to": "常规型",
+        "说明": "正文实为渠道销售与业绩管理，非产品设计，建议改判常规型；内容本身完整。"
+      },
+      {
+        "素材ID": "JD-XZB-12798816",
+        "from": "管理类",
+        "to": "IT/技术类",
+        "说明": "职责含系统开发、AI算法、网络安全与运维，属IT技术岗，应改为IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-13763163",
+        "from": "常规型",
+        "to": "管理类",
+        "说明": "个险销售管理岗偏业务经营分析、非例行销售事务，建议改判管理类。"
+      },
+      {
+        "素材ID": "JD-XZB-13763162",
+        "from": "常规型",
+        "to": "管理类",
+        "说明": "银保销售管理岗实为业务后台管理，例行性弱，建议改判管理类。"
+      },
+      {
+        "素材ID": "JD-XZB-13763049",
+        "from": "IT/技术类",
+        "to": "非常规认知型",
+        "说明": "岗位名为AI开发，正文实为行研、方案PPT与客户访谈，偏咨询，应改非常规类。"
+      },
+      {
+        "素材ID": "JD-XZB-8966506",
+        "from": "IT/技术类",
+        "to": "管理类",
+        "说明": "正文为供应商资源评估、现场审核与成本改善，属采购供应链管理，原分类技术类不符。"
+      },
+      {
+        "素材ID": "JD-XZB-36737470",
+        "from": "非常规认知型",
+        "to": "常规型",
+        "说明": "正文为网络引流、促成销售与客户维护，属销售事务岗，原分类非常规不符。"
+      },
+      {
+        "素材ID": "JD-XZB-3106550",
+        "from": "常规型",
+        "to": "管理类",
+        "说明": "职责为营销项目管理、进度监控与大客户运营，属项目管理，原分类常规型不符。"
+      },
+      {
+        "素材ID": "JD-XZB-36700024",
+        "from": "常规型",
+        "to": "管理类",
+        "说明": "职责为售后商业化项目管理、门店协调与数据分析，属运营管理，原分类不符。"
+      },
+      {
+        "素材ID": "JD-XZB-13763124",
+        "from": "管理类",
+        "to": "IT/技术类",
+        "说明": "广和通制造工程师，职责为生产工艺设计与DFM评审，按优先级应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-36787825",
+        "from": "管理类",
+        "to": "常规型",
+        "说明": "利星坤平货代岗，正文全为客户开发、报价与业绩指标，实为销售事务岗。"
+      },
+      {
+        "素材ID": "JD-XZB-36788282",
+        "from": "常规型",
+        "to": "管理类",
+        "说明": "IE工时测定、产线平衡与精益改善职责完整，实为工业工程，应归管理类。"
+      },
+      {
+        "素材ID": "JD-XZB-36737687",
+        "from": "非常规认知型",
+        "to": "IT/技术类",
+        "说明": "麦格米特热设计工程师，属硬件热工程技术岗，按优先级应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-8966182",
+        "from": "常规型",
+        "to": "非常规认知型",
+        "说明": "第一创业量化做市助理，正文为量化策略与因子研究，应归非常规认知型。"
+      },
+      {
+        "素材ID": "JD-XZB-36787908",
+        "from": "常规型",
+        "to": "IT/技术类",
+        "说明": "芯屏半导体设备助理工程师，属设备工程技术岗，按优先级应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-36787909",
+        "from": "常规型",
+        "to": "IT/技术类",
+        "说明": "芯屏半导体工艺助理工程师，属制程工程技术岗，应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-2873082",
+        "from": "常规型",
+        "to": "非常规认知型",
+        "说明": "合规跟踪、合同审核、反洗钱职责清晰，属法务风控类，应改非常规认知型。"
+      },
+      {
+        "素材ID": "JD-XZB-17734942",
+        "from": "非常规认知型",
+        "to": "IT/技术类",
+        "说明": "腾讯技术研究-基础架构方向，实为后端/基础设施研发岗，应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-35878511",
+        "from": "非常规认知型",
+        "to": "常规型",
+        "说明": "职责与要求齐全但广告与页脚冗余、句子重复，岗位实为一般助理，建议改判常规型。"
+      },
+      {
+        "素材ID": "JD-XZB-11236551",
+        "from": "常规型",
+        "to": "IT/技术类",
+        "说明": "负责基金清算系统与办公生产网运维，要求TCP/IP及网络认证，应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-1736300",
+        "from": "常规型",
+        "to": "IT/技术类",
+        "说明": "负责相机光源调试、视觉程序与PLC通讯，技术含量明确，应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-36839227",
+        "from": "常规型",
+        "to": "IT/技术类",
+        "说明": "负责固件模块开发与硬件初始化，要求C语言与体系结构，属技术岗应归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-36839237",
+        "from": "常规型",
+        "to": "IT/技术类",
+        "说明": "客诉品质分析、8D报告与改善追踪为主，技术要求高于一般检验，建议归IT/技术类。"
+      },
+      {
+        "素材ID": "JD-XZB-18580076",
+        "from": "常规型",
+        "to": "管理类",
+        "说明": "华峰上海生产储备管理岗，车间管理+委培轮岗，明确管理梯队培养，应归管理类；内容真实完整、城市企业一致。；分类问题已通过推荐类型修正，不构成内容失败。"
+      },
+      {
+        "素材ID": "JD-XZB-36839441",
+        "from": "常规型",
+        "to": "非常规认知型",
+        "说明": "北控水务深圳质控助理工程师，JD真实、环境工程背景要求明确；工作以工艺分析与模型研判为主，应归非常规认知型。；分类问题已通过推荐类型修正，不构成内容失败。"
+      }
+    ],
+    "encoding_marked": [
+      "JD-XZB-3105848",
+      "JD-XZB-1735583",
+      "JD-XZB-3106727",
+      "JD-XZB-3106726",
+      "JD-XZB-1735578",
+      "JD-XZB-3105882",
+      "JD-XZB-1735541",
+      "JD-XZB-1735580",
+      "JD-XZB-1735579",
+      "JD-XZB-8939161",
+      "JD-XZB-1735526",
+      "JD-XZB-1735531",
+      "JD-XZB-3105556",
+      "JD-XZB-2671086",
+      "JD-XZB-2671089",
+      "JD-XZB-2880968",
+      "JD-XZB-3106608",
+      "JD-XZB-3106687",
+      "JD-XZB-3106681",
+      "JD-XZB-2674896",
+      "JD-XZB-1736600",
+      "JD-XZB-2872941"
+    ],
+    "structure_excluded": [],
+    "review_note": "四城市候选人分别逐条复核；新增补采批次另做补充复核。",
+    "review_files": [
+      {
+        "file": "jd_content_review_上海.json",
+        "total": 107,
+        "passed": 100,
+        "failed": 7
+      },
+      {
+        "file": "jd_content_review_北京.json",
+        "total": 112,
+        "passed": 98,
+        "failed": 14
+      },
+      {
+        "file": "jd_content_review_广州.json",
+        "total": 107,
+        "passed": 96,
+        "failed": 11
+      },
+      {
+        "file": "jd_content_review_深圳.json",
+        "total": 114,
+        "passed": 107,
+        "failed": 7
+      },
+      {
+        "file": "jd_content_review_补采.json",
+        "total": 18,
+        "passed": 12,
+        "failed": 6
+      },
+      {
+        "file": "jd_content_review_补采2.json",
+        "total": 8,
+        "passed": 6,
+        "failed": 2
+      },
+      {
+        "file": "jd_content_review_补采3.json",
+        "total": 4,
+        "passed": 1,
+        "failed": 3
+      },
+      {
+        "file": "jd_content_review_补采4.json",
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      },
+      {
+        "file": "jd_content_review_补采5.json",
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      }
+    ]
+  },
+  "dedup": {
+    "input_count": 499,
+    "output_count": 495,
+    "exact_removed": [
+      {
+        "kept_id": "JD-XZB-2874197",
+        "removed_id": "JD-XZB-2874197",
+        "group_id": "EXACT-60e0a962e7c7"
+      },
+      {
+        "kept_id": "JD-XZB-3488872",
+        "removed_id": "JD-XZB-3488872",
+        "group_id": "EXACT-f89e07230ca9"
+      },
+      {
+        "kept_id": "JD-XZB-3105160",
+        "removed_id": "JD-XZB-3105160",
+        "group_id": "EXACT-f9323d5b34ba"
+      },
+      {
+        "kept_id": "JD-XZB-36789690",
+        "removed_id": "JD-XZB-36789691",
+        "group_id": "EXACT-47295281a721"
+      }
+    ],
+    "near_duplicate_candidates": [
+      {
+        "left_id": "JD-XZB-3105233",
+        "right_id": "JD-XZB-3105235",
+        "score": 97.13,
+        "group_id": "NEAR-2dc8eb3d7c18"
+      },
+      {
+        "left_id": "JD-XZB-3105490",
+        "right_id": "JD-XZB-3105491",
+        "score": 97.04,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105490",
+        "right_id": "JD-XZB-3105489",
+        "score": 98.18,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105490",
+        "right_id": "JD-XZB-2876652",
+        "score": 96.46,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105490",
+        "right_id": "JD-XZB-2876651",
+        "score": 97.18,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-1735570",
+        "right_id": "JD-XZB-13981352",
+        "score": 98.95,
+        "group_id": "NEAR-e719a30937fd"
+      },
+      {
+        "left_id": "JD-XZB-2784713",
+        "right_id": "JD-XZB-2784782",
+        "score": 99.61,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784713",
+        "right_id": "JD-XZB-2784635",
+        "score": 99.48,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784713",
+        "right_id": "JD-XZB-2784605",
+        "score": 99.35,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784713",
+        "right_id": "JD-XZB-2784615",
+        "score": 99.35,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-25360468",
+        "right_id": "JD-XZB-24765464",
+        "score": 99.17,
+        "group_id": "NEAR-2315a198c1e5"
+      },
+      {
+        "left_id": "JD-XZB-2784782",
+        "right_id": "JD-XZB-2784635",
+        "score": 99.48,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784782",
+        "right_id": "JD-XZB-2784605",
+        "score": 99.48,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784782",
+        "right_id": "JD-XZB-2784615",
+        "score": 99.48,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-1735619",
+        "right_id": "JD-XZB-36838550",
+        "score": 93.65,
+        "group_id": "NEAR-ef08689a5dc1"
+      },
+      {
+        "left_id": "JD-XZB-5118265",
+        "right_id": "JD-XZB-1735537",
+        "score": 97.55,
+        "group_id": "NEAR-486027999ab1"
+      },
+      {
+        "left_id": "JD-XZB-23704155",
+        "right_id": "JD-XZB-35949922",
+        "score": 98.22,
+        "group_id": "NEAR-e8af77c04512"
+      },
+      {
+        "left_id": "JD-XZB-35949923",
+        "right_id": "JD-XZB-23704154",
+        "score": 97.96,
+        "group_id": "NEAR-b58ab1ac0c60"
+      },
+      {
+        "left_id": "JD-XZB-5118229",
+        "right_id": "JD-XZB-8946582",
+        "score": 98.37,
+        "group_id": "NEAR-8a3417844741"
+      },
+      {
+        "left_id": "JD-XZB-17754787",
+        "right_id": "JD-XZB-3105533",
+        "score": 99.38,
+        "group_id": "NEAR-f3f4b55fc2f3"
+      },
+      {
+        "left_id": "JD-XZB-36268658",
+        "right_id": "JD-XZB-36272089",
+        "score": 98.45,
+        "group_id": "NEAR-d0b06c652277"
+      },
+      {
+        "left_id": "JD-XZB-36869766",
+        "right_id": "JD-XZB-37065116",
+        "score": 97.48,
+        "group_id": "NEAR-0d0aec7d6320"
+      },
+      {
+        "left_id": "JD-XZB-36869766",
+        "right_id": "JD-XZB-36270420",
+        "score": 95.98,
+        "group_id": "NEAR-0d0aec7d6320"
+      },
+      {
+        "left_id": "JD-XZB-37065054",
+        "right_id": "JD-XZB-36787776",
+        "score": 99.6,
+        "group_id": "NEAR-117983eb7d81"
+      },
+      {
+        "left_id": "JD-XZB-37065116",
+        "right_id": "JD-XZB-36270420",
+        "score": 98.49,
+        "group_id": "NEAR-0d0aec7d6320"
+      },
+      {
+        "left_id": "JD-XZB-17578328",
+        "right_id": "JD-XZB-36269490",
+        "score": 98.84,
+        "group_id": "NEAR-94fb94d0e99c"
+      },
+      {
+        "left_id": "JD-XZB-3106379",
+        "right_id": "JD-XZB-36788981",
+        "score": 96.66,
+        "group_id": "NEAR-74c1f1a62798"
+      },
+      {
+        "left_id": "JD-XZB-36839246",
+        "right_id": "JD-XZB-36839245",
+        "score": 95.53,
+        "group_id": "NEAR-373a4207ca44"
+      },
+      {
+        "left_id": "JD-XZB-2784635",
+        "right_id": "JD-XZB-2784605",
+        "score": 99.61,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784635",
+        "right_id": "JD-XZB-2784615",
+        "score": 99.61,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-2784605",
+        "right_id": "JD-XZB-2784615",
+        "score": 99.61,
+        "group_id": "NEAR-60bad1f5ab00"
+      },
+      {
+        "left_id": "JD-XZB-17751453",
+        "right_id": "JD-XZB-30166419",
+        "score": 97.62,
+        "group_id": "NEAR-c1703a9e3671"
+      },
+      {
+        "left_id": "JD-XZB-17751453",
+        "right_id": "JD-XZB-36263567",
+        "score": 96.76,
+        "group_id": "NEAR-c1703a9e3671"
+      },
+      {
+        "left_id": "JD-XZB-30166419",
+        "right_id": "JD-XZB-36263567",
+        "score": 97.16,
+        "group_id": "NEAR-c1703a9e3671"
+      },
+      {
+        "left_id": "JD-XZB-3106608",
+        "right_id": "JD-XZB-1731528",
+        "score": 99.15,
+        "group_id": "NEAR-ec408a9a8f2f"
+      },
+      {
+        "left_id": "JD-XZB-3105491",
+        "right_id": "JD-XZB-3105489",
+        "score": 98.01,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105491",
+        "right_id": "JD-XZB-2876652",
+        "score": 98.27,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105491",
+        "right_id": "JD-XZB-2876651",
+        "score": 98.99,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105489",
+        "right_id": "JD-XZB-2876652",
+        "score": 97.43,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-3105489",
+        "right_id": "JD-XZB-2876651",
+        "score": 98.15,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-2876652",
+        "right_id": "JD-XZB-2876651",
+        "score": 98.41,
+        "group_id": "NEAR-5a16b9e3f652"
+      },
+      {
+        "left_id": "JD-XZB-36788816",
+        "right_id": "JD-XZB-2671073",
+        "score": 93.01,
+        "group_id": "NEAR-1eb6f18f76d1"
+      },
+      {
+        "left_id": "JD-XZB-36869767",
+        "right_id": "JD-XZB-36787922",
+        "score": 92.93,
+        "group_id": "NEAR-89cfc4f90622"
+      },
+      {
+        "left_id": "JD-XZB-36869767",
+        "right_id": "JD-XZB-36838895",
+        "score": 92.35,
+        "group_id": "NEAR-89cfc4f90622"
+      },
+      {
+        "left_id": "JD-XZB-2878551",
+        "right_id": "JD-XZB-2878552",
+        "score": 94.32,
+        "group_id": "NEAR-693d0cd1ddc4"
+      },
+      {
+        "left_id": "JD-XZB-36869768",
+        "right_id": "JD-XZB-36838893",
+        "score": 96.28,
+        "group_id": "NEAR-7c9c0c883a3a"
+      },
+      {
+        "left_id": "JD-XZB-36787922",
+        "right_id": "JD-XZB-36838895",
+        "score": 95.44,
+        "group_id": "NEAR-89cfc4f90622"
+      },
+      {
+        "left_id": "JD-XZB-18580077",
+        "right_id": "JD-XZB-18580103",
+        "score": 97.09,
+        "group_id": "NEAR-b4e7d8d31610"
+      }
+    ],
+    "resolution": [
+      {
+        "group_id": "NEAR-2dc8eb3d7c18",
+        "retained_ids": [
+          "JD-XZB-3105233",
+          "JD-XZB-3105235"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-3105233",
+            "right_id": "JD-XZB-3105235",
+            "score": 97.13,
+            "group_id": "NEAR-2dc8eb3d7c18"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-5a16b9e3f652",
+        "retained_ids": [
+          "JD-XZB-3105490",
+          "JD-XZB-3105491",
+          "JD-XZB-3105489",
+          "JD-XZB-2876652",
+          "JD-XZB-2876651"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-3105490",
+            "right_id": "JD-XZB-3105491",
+            "score": 97.04,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105490",
+            "right_id": "JD-XZB-3105489",
+            "score": 98.18,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105490",
+            "right_id": "JD-XZB-2876652",
+            "score": 96.46,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105490",
+            "right_id": "JD-XZB-2876651",
+            "score": 97.18,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105491",
+            "right_id": "JD-XZB-3105489",
+            "score": 98.01,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105491",
+            "right_id": "JD-XZB-2876652",
+            "score": 98.27,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105491",
+            "right_id": "JD-XZB-2876651",
+            "score": 98.99,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105489",
+            "right_id": "JD-XZB-2876652",
+            "score": 97.43,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-3105489",
+            "right_id": "JD-XZB-2876651",
+            "score": 98.15,
+            "group_id": "NEAR-5a16b9e3f652"
+          },
+          {
+            "left_id": "JD-XZB-2876652",
+            "right_id": "JD-XZB-2876651",
+            "score": 98.41,
+            "group_id": "NEAR-5a16b9e3f652"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-e719a30937fd",
+        "retained_ids": [
+          "JD-XZB-1735570",
+          "JD-XZB-13981352"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-1735570",
+            "right_id": "JD-XZB-13981352",
+            "score": 98.95,
+            "group_id": "NEAR-e719a30937fd"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-60bad1f5ab00",
+        "retained_ids": [
+          "JD-XZB-2784713",
+          "JD-XZB-2784782",
+          "JD-XZB-2784635",
+          "JD-XZB-2784605",
+          "JD-XZB-2784615"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-2784713",
+            "right_id": "JD-XZB-2784782",
+            "score": 99.61,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784713",
+            "right_id": "JD-XZB-2784635",
+            "score": 99.48,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784713",
+            "right_id": "JD-XZB-2784605",
+            "score": 99.35,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784713",
+            "right_id": "JD-XZB-2784615",
+            "score": 99.35,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784782",
+            "right_id": "JD-XZB-2784635",
+            "score": 99.48,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784782",
+            "right_id": "JD-XZB-2784605",
+            "score": 99.48,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784782",
+            "right_id": "JD-XZB-2784615",
+            "score": 99.48,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784635",
+            "right_id": "JD-XZB-2784605",
+            "score": 99.61,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784635",
+            "right_id": "JD-XZB-2784615",
+            "score": 99.61,
+            "group_id": "NEAR-60bad1f5ab00"
+          },
+          {
+            "left_id": "JD-XZB-2784605",
+            "right_id": "JD-XZB-2784615",
+            "score": 99.61,
+            "group_id": "NEAR-60bad1f5ab00"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-2315a198c1e5",
+        "retained_ids": [
+          "JD-XZB-25360468",
+          "JD-XZB-24765464"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-25360468",
+            "right_id": "JD-XZB-24765464",
+            "score": 99.17,
+            "group_id": "NEAR-2315a198c1e5"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-ef08689a5dc1",
+        "retained_ids": [
+          "JD-XZB-1735619",
+          "JD-XZB-36838550"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-1735619",
+            "right_id": "JD-XZB-36838550",
+            "score": 93.65,
+            "group_id": "NEAR-ef08689a5dc1"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-486027999ab1",
+        "retained_ids": [
+          "JD-XZB-5118265",
+          "JD-XZB-1735537"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-5118265",
+            "right_id": "JD-XZB-1735537",
+            "score": 97.55,
+            "group_id": "NEAR-486027999ab1"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-e8af77c04512",
+        "retained_ids": [
+          "JD-XZB-23704155",
+          "JD-XZB-35949922"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-23704155",
+            "right_id": "JD-XZB-35949922",
+            "score": 98.22,
+            "group_id": "NEAR-e8af77c04512"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-b58ab1ac0c60",
+        "retained_ids": [
+          "JD-XZB-35949923",
+          "JD-XZB-23704154"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-35949923",
+            "right_id": "JD-XZB-23704154",
+            "score": 97.96,
+            "group_id": "NEAR-b58ab1ac0c60"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-8a3417844741",
+        "retained_ids": [
+          "JD-XZB-5118229",
+          "JD-XZB-8946582"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-5118229",
+            "right_id": "JD-XZB-8946582",
+            "score": 98.37,
+            "group_id": "NEAR-8a3417844741"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-f3f4b55fc2f3",
+        "retained_ids": [
+          "JD-XZB-17754787",
+          "JD-XZB-3105533"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-17754787",
+            "right_id": "JD-XZB-3105533",
+            "score": 99.38,
+            "group_id": "NEAR-f3f4b55fc2f3"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-d0b06c652277",
+        "retained_ids": [
+          "JD-XZB-36268658",
+          "JD-XZB-36272089"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-36268658",
+            "right_id": "JD-XZB-36272089",
+            "score": 98.45,
+            "group_id": "NEAR-d0b06c652277"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-0d0aec7d6320",
+        "retained_ids": [
+          "JD-XZB-36869766",
+          "JD-XZB-37065116",
+          "JD-XZB-36270420"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-36869766",
+            "right_id": "JD-XZB-37065116",
+            "score": 97.48,
+            "group_id": "NEAR-0d0aec7d6320"
+          },
+          {
+            "left_id": "JD-XZB-36869766",
+            "right_id": "JD-XZB-36270420",
+            "score": 95.98,
+            "group_id": "NEAR-0d0aec7d6320"
+          },
+          {
+            "left_id": "JD-XZB-37065116",
+            "right_id": "JD-XZB-36270420",
+            "score": 98.49,
+            "group_id": "NEAR-0d0aec7d6320"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-117983eb7d81",
+        "retained_ids": [
+          "JD-XZB-37065054",
+          "JD-XZB-36787776"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-37065054",
+            "right_id": "JD-XZB-36787776",
+            "score": 99.6,
+            "group_id": "NEAR-117983eb7d81"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-94fb94d0e99c",
+        "retained_ids": [
+          "JD-XZB-17578328",
+          "JD-XZB-36269490"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-17578328",
+            "right_id": "JD-XZB-36269490",
+            "score": 98.84,
+            "group_id": "NEAR-94fb94d0e99c"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-74c1f1a62798",
+        "retained_ids": [
+          "JD-XZB-3106379",
+          "JD-XZB-36788981"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-3106379",
+            "right_id": "JD-XZB-36788981",
+            "score": 96.66,
+            "group_id": "NEAR-74c1f1a62798"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-373a4207ca44",
+        "retained_ids": [
+          "JD-XZB-36839246",
+          "JD-XZB-36839245"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-36839246",
+            "right_id": "JD-XZB-36839245",
+            "score": 95.53,
+            "group_id": "NEAR-373a4207ca44"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-c1703a9e3671",
+        "retained_ids": [
+          "JD-XZB-17751453",
+          "JD-XZB-30166419",
+          "JD-XZB-36263567"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-17751453",
+            "right_id": "JD-XZB-30166419",
+            "score": 97.62,
+            "group_id": "NEAR-c1703a9e3671"
+          },
+          {
+            "left_id": "JD-XZB-17751453",
+            "right_id": "JD-XZB-36263567",
+            "score": 96.76,
+            "group_id": "NEAR-c1703a9e3671"
+          },
+          {
+            "left_id": "JD-XZB-30166419",
+            "right_id": "JD-XZB-36263567",
+            "score": 97.16,
+            "group_id": "NEAR-c1703a9e3671"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-ec408a9a8f2f",
+        "retained_ids": [
+          "JD-XZB-3106608",
+          "JD-XZB-1731528"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-3106608",
+            "right_id": "JD-XZB-1731528",
+            "score": 99.15,
+            "group_id": "NEAR-ec408a9a8f2f"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-1eb6f18f76d1",
+        "retained_ids": [
+          "JD-XZB-36788816",
+          "JD-XZB-2671073"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-36788816",
+            "right_id": "JD-XZB-2671073",
+            "score": 93.01,
+            "group_id": "NEAR-1eb6f18f76d1"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-89cfc4f90622",
+        "retained_ids": [
+          "JD-XZB-36869767",
+          "JD-XZB-36787922",
+          "JD-XZB-36838895"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-36869767",
+            "right_id": "JD-XZB-36787922",
+            "score": 92.93,
+            "group_id": "NEAR-89cfc4f90622"
+          },
+          {
+            "left_id": "JD-XZB-36869767",
+            "right_id": "JD-XZB-36838895",
+            "score": 92.35,
+            "group_id": "NEAR-89cfc4f90622"
+          },
+          {
+            "left_id": "JD-XZB-36787922",
+            "right_id": "JD-XZB-36838895",
+            "score": 95.44,
+            "group_id": "NEAR-89cfc4f90622"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-693d0cd1ddc4",
+        "retained_ids": [
+          "JD-XZB-2878551",
+          "JD-XZB-2878552"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-2878551",
+            "right_id": "JD-XZB-2878552",
+            "score": 94.32,
+            "group_id": "NEAR-693d0cd1ddc4"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-7c9c0c883a3a",
+        "retained_ids": [
+          "JD-XZB-36869768",
+          "JD-XZB-36838893"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-36869768",
+            "right_id": "JD-XZB-36838893",
+            "score": 96.28,
+            "group_id": "NEAR-7c9c0c883a3a"
+          }
+        ]
+      },
+      {
+        "group_id": "NEAR-b4e7d8d31610",
+        "retained_ids": [
+          "JD-XZB-18580077",
+          "JD-XZB-18580103"
+        ],
+        "reason": "正文相似度达到92，但岗位名称、企业或城市不同，属于独立岗位发布；不按文本相似度直接删除。随后仍按同城市、同企业、同岗位名称再合并。",
+        "candidates": [
+          {
+            "left_id": "JD-XZB-18580077",
+            "right_id": "JD-XZB-18580103",
+            "score": 97.09,
+            "group_id": "NEAR-b4e7d8d31610"
+          }
+        ]
+      }
+    ],
+    "duplicate_id_resolution": [],
+    "company_role_duplicate_resolution": [
+      {
+        "keep_id": "JD-XZB-37276767",
+        "removed_ids": [
+          "JD-XZB-33067208",
+          "JD-XZB-37094684",
+          "JD-XZB-35878493"
+        ],
+        "company": "北京汇智云科人工智能科技有限责任公司",
+        "title": "综合文员",
+        "city": "北京"
+      },
+      {
+        "keep_id": "JD-XZB-36789079",
+        "removed_ids": [
+          "JD-XZB-37093716"
+        ],
+        "company": "上海美蓓亚精密机电有限公司",
+        "title": "车间生产操作工",
+        "city": "上海"
+      },
+      {
+        "keep_id": "JD-XZB-36524848",
+        "removed_ids": [
+          "JD-XZB-37276766",
+          "JD-XZB-37094685",
+          "JD-XZB-33067209"
+        ],
+        "company": "北京汇智云科人工智能科技有限责任公司",
+        "title": "计算机后端开发、前端与系统运维工程师助理",
+        "city": "北京"
+      },
+      {
+        "keep_id": "JD-XZB-37276769",
+        "removed_ids": [
+          "JD-XZB-37094682"
+        ],
+        "company": "北京汇智云科人工智能科技有限责任公司",
+        "title": "项目经理助理",
+        "city": "北京"
+      },
+      {
+        "keep_id": "JD-XZB-36265658",
+        "removed_ids": [
+          "JD-XZB-8966500"
+        ],
+        "company": "国光电器股份有限公司",
+        "title": "嵌入式软件工程师",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-36268658",
+        "removed_ids": [
+          "JD-XZB-36272089",
+          "JD-XZB-36838759"
+        ],
+        "company": "广州市昊志机电股份有限公司",
+        "title": "仿真测试工程师",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-35975588",
+        "removed_ids": [
+          "JD-XZB-36838137"
+        ],
+        "company": "广州数控设备有限公司",
+        "title": "硬件工程师",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-37429896",
+        "removed_ids": [
+          "JD-XZB-36787913"
+        ],
+        "company": "广东灏仟亿科技集团有限公司",
+        "title": "供应链管培生",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-36270420",
+        "removed_ids": [
+          "JD-XZB-37065116",
+          "JD-XZB-36787748"
+        ],
+        "company": "广东鑫达新材料科技有限公司",
+        "title": "财务管理",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-37065054",
+        "removed_ids": [
+          "JD-XZB-36787776"
+        ],
+        "company": "广东诚安信会计师事务所（特殊普通合伙）",
+        "title": "审计专员/助理",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-37275767",
+        "removed_ids": [
+          "JD-XZB-36787805"
+        ],
+        "company": "广州创视未来文化传播有限公司",
+        "title": "账号运营(新媒体运营)",
+        "city": "广州"
+      },
+      {
+        "keep_id": "JD-XZB-37128077",
+        "removed_ids": [
+          "JD-XZB-36838813"
+        ],
+        "company": "多益网络有限公司",
+        "title": "综合文员【27届校招】",
+        "city": "广州"
+      }
+    ]
+  },
+  "sources": {
+    "repeated_url_groups": {
+      "https://mengniu.zhiye.com/custom/detail?jobAdId=c784fea1-e7d2-4ac7-8e80-ac14f5c0b2c3": 5,
+      "https://mengniu.zhiye.com/custom/detail?jobAdId=4a1c80b7-61ef-4410-a3a5-320a8d349fce": 2,
+      "https://jssoft.zhiye.com/campus/detail?jobAdId=fda07f7d-ffff-482b-88bd-7f72df55d858": 5,
+      "https://mengniu.zhiye.com/custom/detail?jobAdId=c045457a-b70a-401d-b1ca-fc995b5e1b81": 2,
+      "https://mengniu.zhiye.com/custom/detail?jobAdId=444f3000-5e67-4d6d-a919-f546067121f0": 3,
+      "https://digitalchina.zhiye.com/custom/detail?jobAdId=31028e3a-cea7-44ee-b00c-aa20b3a0f148": 2
+    },
+    "domain_counts": {
+      "www.nxbys.cn": 1,
+      "uq1h428xyc.jobs.feishu.cn": 3,
+      "norincogroupzhaopin.zhiye.com": 3,
+      "job.xiaohongshu.com": 5,
+      "ronbay.zhiye.com": 2,
+      "pudutech.zhiye.com": 6,
+      "baicgroup.zhiye.com": 4,
+      "newland.zhiye.com": 3,
+      "neweastech.zhiye.com": 6,
+      "thad.zhiye.com": 1,
+      "orienspace.zhiye.com": 3,
+      "genomics.zhiye.com": 1,
+      "mengniu.zhiye.com": 21,
+      "www.iguopin.com": 47,
+      "career.cec.com.cn": 4,
+      "www.liepin.com": 5,
+      "genertec.zhiye.com": 2,
+      "djbx.zhiye.com": 7,
+      "sinotrans.zhiye.com": 3,
+      "jssoft.zhiye.com": 8,
+      "digitalchina.zhiye.com": 8,
+      "join.qq.com": 5,
+      "gjzq.zhiye.com": 4,
+      "qhkyfund.zhiye.com": 7,
+      "jobs.bjbys.net.cn": 2,
+      "ccccltd.zhiye.com": 9,
+      "campuske.zhiye.com": 3,
+      "www.cqbys.com": 3,
+      "job.citicbank.com": 5,
+      "nesc.zhiye.com": 5,
+      "glsc.zhiye.com": 8,
+      "fscut.zhiye.com": 6,
+      "primebot.jobs.feishu.cn": 2,
+      "agirobot.jobs.feishu.cn": 2,
+      "gravityxr.zhiye.com": 2,
+      "wecruit.hotjob.cn": 16,
+      "hitrendtech1.zhiye.com": 1,
+      "fibocom.zhiye.com": 16,
+      "spicqyxdl.zhiye.com": 10,
+      "siasun.zhiye.com": 2,
+      "yhwins2.zhiye.com": 2,
+      "univista-isg.zhiye.com": 1,
+      "britesemi.zhiye.com": 1,
+      "tyslchinatelecom.zhiye.com": 5,
+      "smec.zhiye.com": 1,
+      "zhaopin.comac.cc": 2,
+      "sinochem.hotjob.cn": 2,
+      "employment.jx.smartedu.cn": 7,
+      "sph.zhiye.com": 2,
+      "swzc-tech.zhiye.com": 1,
+      "nci.zhiye.com": 1,
+      "jobtaikang.zhiye.com": 2,
+      "huafeng.zhiye.com": 7,
+      "www.shixiseng.com": 1,
+      "sec.hotjob.cn": 1,
+      "xd-legacy.jobs.feishu.cn": 1,
+      "gongniu.zhiye.com": 3,
+      "app.mokahr.com": 4,
+      "gotion.zhiye.com": 1,
+      "job.gds.edu.cn": 57,
+      "mornsun.zhiye.com": 4,
+      "iwhalecloud1.zhiye.com": 2,
+      "xiaopeng.jobs.feishu.cn": 2,
+      "huawutang1.zhiye.com": 2,
+      "jovohr.zhiye.com": 2,
+      "campus.pingan.com": 1,
+      "insight-med.zhiye.com": 11,
+      "avicsz.zhiye.com": 5,
+      "hairobotics.zhiye.com": 8,
+      "sunwodacampus.zhiye.com": 2,
+      "purcotton.zhiye.com": 1,
+      "medcaptain.zhiye.com": 5,
+      "szkingdom1.zhiye.com": 1,
+      "swaysure.zhiye.com": 1
+    },
+    "robots_preflight_for_rejected_domains": [
+      {
+        "domain": "jobs.bjbys.net.cn",
+        "robots_url": "https://jobs.bjbys.net.cn/robots.txt",
+        "error": "HTTPError",
+        "detail": "HTTP Error 404: "
+      },
+      {
+        "domain": "job.tiangong.edu.cn",
+        "robots_url": "https://job.tiangong.edu.cn/robots.txt",
+        "error": "HTTPError",
+        "detail": "HTTP Error 404: Not Found"
+      },
+      {
+        "domain": "job.njtu.edu.cn",
+        "robots_url": "https://job.njtu.edu.cn/robots.txt",
+        "error": "URLError",
+        "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'job.njtu.edu.cn'. (_ssl.c:1032)>"
+      },
+      {
+        "domain": "jyzd.ucass.edu.cn",
+        "robots_url": "https://jyzd.ucass.edu.cn/robots.txt",
+        "error": "HTTPError",
+        "detail": "HTTP Error 404: Not Found"
+      },
+      {
+        "domain": "job.xju.edu.cn",
+        "robots_url": "https://job.xju.edu.cn/robots.txt",
+        "error": "HTTPError",
+        "detail": "HTTP Error 404: Not Found"
+      },
+      {
+        "domain": "career.tyut.edu.cn",
+        "robots_url": "https://career.tyut.edu.cn/robots.txt",
+        "error": "HTTPError",
+        "detail": "HTTP Error 404: Not Found"
+      }
+    ]
+  },
+  "metadata_enrichment": {
+    "rows": 499,
+    "changes": {
+      "行业": 31,
+      "企业性质": 3
+    },
+    "remaining_missing": {
+      "行业": 115,
+      "企业性质": 79,
+      "企业规模": 499
+    },
+    "examples": [
+      {
+        "企业名称": "中交集团",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "中交集团",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "中交集团",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "中国中化",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "中交集团",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "中交集团",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "中交集团",
+        "字段": "行业",
+        "回填值": "国央企",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "小红书",
+        "字段": "行业",
+        "回填值": "策略算法",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "广州市昊志机电股份有限公司",
+        "字段": "企业性质",
+        "回填值": "上市公司",
+        "依据": "同一企业其他公开快照记录"
+      },
+      {
+        "企业名称": "广州市昊志机电股份有限公司",
+        "字段": "企业性质",
+        "回填值": "上市公司",
+        "依据": "同一企业其他公开快照记录"
+      }
+    ],
+    "rule": "只使用同一企业其他公开快照记录中出现频率最高的非空值；不按企业名称猜测。"
+  },
+  "company_industry_enrichment": {
+    "changed": 2,
+    "examples": [
+      {
+        "素材ID": "JD-XZB-5118166",
+        "企业名称": "广州远海汽车船运输有限公司",
+        "行业": "生产/物流"
+      },
+      {
+        "素材ID": "JD-XZB-36838902",
+        "企业名称": "广州数控设备有限公司",
+        "行业": "制造业"
+      }
+    ],
+    "mapping_size": 61
+  },
+  "field_completeness": {
+    "行业": {
+      "disclosed": 306,
+      "total": 400
+    },
+    "企业性质": {
+      "disclosed": 330,
+      "total": 400
+    },
+    "企业规模": {
+      "disclosed": 0,
+      "total": 400
+    }
+  },
+  "snapshot_sha256": {
+    "jobs-2026-09-03.csv": "60e97755c4faf8cd2a2290364527654e7b421db31ae3da783614de1dbe90accb",
+    "jobs-2026-10-01.csv": "3b587b8cb0d5f60e845157e4ce9bd3a3a59a9ab71e844691781243e3907d2825",
+    "jobs-2026-11-01.csv": "00c6aa8fff93e2acf237bc3f606299875003bbd6b6ae3f448895d328c4eb392c"
+  },
+  "human_review_note": "自动校验与独立内容复核已完成；人工复核状态未写为已通过，不冒充小组第二人签字。"
+}
