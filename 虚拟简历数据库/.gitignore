@@ -1,0 +1,11 @@
+work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.log
+*.tmp
+*.temp
+*.state
+crawl_state.json
+preflight_state.json
