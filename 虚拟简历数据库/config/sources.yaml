@@ -1,0 +1,29 @@
+user_agent: ResearchMaterialBot/1.0
+request_interval_seconds: 6
+daily_limit: 100
+max_retries: 3
+timeout_seconds: 15
+page_limit: 10
+sources: []
+# 每个来源必须显式配置并人工确认，示例字段如下（不要直接启用示例）：
+# - key: example-jd
+#   enabled: false
+#   name: 示例静态招聘页
+#   source_type: 公开招聘平台
+#   base_url: https://example.invalid/
+#   start_urls: [https://example.invalid/jobs/1]
+#   public_static: true
+#   preserve_query_params: [ref]  # 仅在校招宝等来源条款要求保留归因参数时配置
+#   terms:
+#     manual_confirmed: false
+#     reference: 人工填写条款页面与确认日期
+#   selectors:
+#     title: h1.job-title
+#     jd: div.job-description
+#     industry: span.industry
+#     city: span.city
+#     company: span.company
+#     company_nature: span.company-nature
+#     company_size: span.company-size
+#     source_record_id: meta[name=job-id]
+#   source_record_id_attribute: content
