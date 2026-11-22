@@ -10,6 +10,7 @@ from common import (
     FIELD_TYPES,
     JOB_TYPES,
     STRUCTURE_DEIDENTIFICATION_STATUS,
+    STRUCTURE_FIELD_TYPES,
     material_id,
     normalize_url,
     schema_record,
@@ -71,7 +72,7 @@ def import_structure_record(
     if values.get("来源类型") != "公开简历模板":
         raise UnsafeResumeInput("结构素材的来源类型必须是公开简历模板")
     field_type = values.get("字段类型", "")
-    if field_type not in FIELD_TYPES[1:]:
+    if field_type not in STRUCTURE_FIELD_TYPES:
         raise UnsafeResumeInput("字段类型必须是教育、实习、项目或技能结构")
     if values.get("岗位类型") not in JOB_TYPES:
         raise UnsafeResumeInput("岗位类型无效")

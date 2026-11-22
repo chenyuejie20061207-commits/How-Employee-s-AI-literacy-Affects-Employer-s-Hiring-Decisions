@@ -41,9 +41,23 @@ SCHEMA_FIELDS = (
 SOURCE_TYPES = ("公开招聘平台", "招聘信息聚合站", "公开简历模板")
 JOB_TYPES = ("IT/技术类", "管理类", "非常规认知型", "常规型")
 STRUCTURE_FIELD_TYPES = ("教育结构", "实习结构", "项目结构", "技能结构")
-FIELD_TYPES = ("岗位JD",) + STRUCTURE_FIELD_TYPES
+ENTRY_FIELD_TYPES = ("教育经历条目", "实习经历条目", "项目经历条目", "技能条目")
+FIELD_TYPES = ("岗位JD",) + STRUCTURE_FIELD_TYPES + ENTRY_FIELD_TYPES
 STRUCTURE_DEIDENTIFICATION_STATUS = "结构抽象v1（不含原文）"
-DEIDENTIFICATION_STATUSES = ("已脱敏", "未脱敏", STRUCTURE_DEIDENTIFICATION_STATUS)
+ENTRY_DEIDENTIFICATION_STATUS = "虚构化改写v1（不含原文）"
+DEIDENTIFICATION_STATUSES = (
+    "已脱敏",
+    "未脱敏",
+    STRUCTURE_DEIDENTIFICATION_STATUS,
+    ENTRY_DEIDENTIFICATION_STATUS,
+)
+JOB_TYPE_ABBR = {"IT/技术类": "IT", "管理类": "MGT", "非常规认知型": "NRC", "常规型": "REG"}
+MODULE_ABBR = {
+    "教育经历条目": "EDU",
+    "实习经历条目": "INT",
+    "项目经历条目": "PRJ",
+    "技能条目": "SKL",
+}
 REVIEW_STATUSES = (
     "待复核",
     "自动校验通过（待人工复核）",
