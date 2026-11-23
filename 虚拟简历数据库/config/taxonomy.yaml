@@ -13,10 +13,16 @@ job_keywords:
 validation:
   jd_target: 400
   structure_target: 80
+  entry_target: 80
+  ai_entry_target: 96
   jd_stratum_quota: 25
   structure_cell_quota: 5
+  entry_cell_quota: 5
+  ai_entry_cell_quota: 1
   jd_length: [100, 6000]
   structure_length: [20, 600]
+  entry_length: [30, 400]
+  ai_entry_length: [80, 300]
   near_duplicate_threshold: 92
   max_domain_share: 0.30
   max_company_share: 0.10

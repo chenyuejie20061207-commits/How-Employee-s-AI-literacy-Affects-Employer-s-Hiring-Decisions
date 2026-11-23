@@ -10,7 +10,12 @@ from urllib.parse import urlsplit
 
 from clean import clean_text
 from common import (
+    AI_LEVEL_NA,
+    AI_SIGNAL_LEVELS,
+    AI_SIGNAL_VALUES,
     DEIDENTIFICATION_STATUSES,
+    ENTRY_DEIDENTIFICATION_STATUS,
+    ENTRY_FIELD_TYPES,
     FIELD_TYPES,
     JOB_TYPES,
     REVIEW_STATUSES,
@@ -92,10 +97,16 @@ def validate_records(
     settings = config.get("validation", {})
     jd_target = int(settings.get("jd_target", 400))
     structure_target = int(settings.get("structure_target", 80))
+    entry_target = int(settings.get("entry_target", 80))
+    ai_entry_target = int(settings.get("ai_entry_target", 96))
     jd_quota = int(settings.get("jd_stratum_quota", 25))
     structure_quota = int(settings.get("structure_cell_quota", 5))
+    entry_quota = int(settings.get("entry_cell_quota", 5))
+    ai_entry_quota = int(settings.get("ai_entry_cell_quota", 1))
     jd_min, jd_max = settings.get("jd_length", [100, 6000])
     structure_min, structure_max = settings.get("structure_length", [20, 600])
+    entry_min, entry_max = settings.get("entry_length", [30, 400])
+    ai_entry_min, ai_entry_max = settings.get("ai_entry_length", [80, 300])
 
     errors: list[dict[str, str]] = []
 
@@ -119,6 +130,17 @@ def validate_records(
         for job_type in JOB_TYPES
         for field_type in STRUCTURE_FIELD_TYPES
     }
+    entry_matrix = {
+        f"{job_type}|{field_type}": {"count": 0, "target": entry_quota}
+        for job_type in JOB_TYPES
+        for field_type in ENTRY_FIELD_TYPES
+    }
+    ai_entry_matrix = {
+        f"{job_type}|{field_type}|{level}": {"count": 0, "target": ai_entry_quota}
+        for job_type in JOB_TYPES
+        for field_type in ENTRY_FIELD_TYPES
+        for level in AI_SIGNAL_LEVELS
+    }
     counts = Counter()
     ids: dict[str, int] = {}
     hashes: dict[str, int] = {}
@@ -136,6 +158,7 @@ def validate_records(
         field_type = str(record.get("字段类型", ""))
         is_jd = field_type == "岗位JD"
         is_structure = field_type in STRUCTURE_FIELD_TYPES
+        is_entry = field_type in ENTRY_FIELD_TYPES
         if is_jd:
             counts["jd"] += 1
             for field in JD_REQUIRED:
@@ -143,6 +166,11 @@ def validate_records(
                     error("missing_required", record, field)
         elif is_structure:
             counts["structures"] += 1
+        elif is_entry:
+            if material_id.startswith("VAI-"):
+                counts["ai_entries"] += 1
+            else:
+                counts["entries"] += 1
 
         if record.get("来源类型") not in SOURCE_TYPES:
             error("invalid_enum", record, "来源类型")
@@ -151,15 +179,31 @@ def validate_records(
         if field_type not in FIELD_TYPES:
             error("invalid_enum", record, "字段类型")
         deidentification_status = record.get("脱敏状态")
+        if is_jd:
+            family_allowed = ("已脱敏", "未脱敏")
+        elif is_structure:
+            family_allowed = (STRUCTURE_DEIDENTIFICATION_STATUS, "未脱敏")
+        elif is_entry:
+            family_allowed = (ENTRY_DEIDENTIFICATION_STATUS, "未脱敏")
+        else:
+            family_allowed = DEIDENTIFICATION_STATUSES
         if deidentification_status not in DEIDENTIFICATION_STATUSES or (
-            is_jd and deidentification_status == STRUCTURE_DEIDENTIFICATION_STATUS
+            deidentification_status not in family_allowed
         ):
             error("invalid_enum", record, "脱敏状态")
         if record.get("人工复核状态") not in REVIEW_STATUSES:
             error("invalid_enum", record, "人工复核状态")
+        ai_level = str(record.get("AI素养信号等级", "")).strip()
+        is_ai_entry = is_entry and material_id.startswith("VAI-")
+        if ai_level not in AI_SIGNAL_VALUES:
+            error("invalid_enum", record, "AI素养信号等级")
+        elif is_ai_entry and ai_level not in AI_SIGNAL_LEVELS:
+            error("invalid_enum", record, "AI素养信号等级", "VAI条目须为L0-L5")
+        elif (not is_ai_entry) and ai_level != AI_LEVEL_NA:
+            error("invalid_enum", record, "AI素养信号等级", "非VAI行须为不适用")
         if is_jd and record.get("来源类型") == "公开简历模板":
             error("source_field_mismatch", record, "来源类型")
-        if is_structure and record.get("来源类型") != "公开简历模板":
+        if (is_structure or is_entry) and record.get("来源类型") != "公开简历模板":
             error("source_field_mismatch", record, "来源类型")
 
         city = str(record.get("城市", "")).strip()
@@ -173,10 +217,25 @@ def validate_records(
             cell = f"{record.get('岗位类型', '')}|{field_type}"
             if cell in structure_matrix:
                 structure_matrix[cell]["count"] += 1
+        if is_entry:
+            cell = f"{record.get('岗位类型', '')}|{field_type}"
+            if is_ai_entry:
+                ai_cell = f"{cell}|{ai_level}"
+                if ai_cell in ai_entry_matrix:
+                    ai_entry_matrix[ai_cell]["count"] += 1
+            elif cell in entry_matrix:
+                entry_matrix[cell]["count"] += 1
 
         text = clean_text(str(record.get("文本内容", "")))
-        minimum, maximum = (jd_min, jd_max) if is_jd else (structure_min, structure_max)
-        if is_jd or is_structure:
+        if is_jd:
+            minimum, maximum = jd_min, jd_max
+        elif is_structure:
+            minimum, maximum = structure_min, structure_max
+        elif is_ai_entry:
+            minimum, maximum = ai_entry_min, ai_entry_max
+        else:
+            minimum, maximum = entry_min, entry_max
+        if is_jd or is_structure or is_entry:
             if not minimum <= len(text) <= maximum:
                 error(
                     "invalid_text_length",
@@ -220,10 +279,15 @@ def validate_records(
 
         if strict and record.get("人工复核状态") != "已通过":
             error("review_not_passed", record, "人工复核状态")
-        if strict and not (
-            deidentification_status == "已脱敏"
-            or (is_structure and deidentification_status == STRUCTURE_DEIDENTIFICATION_STATUS)
-        ):
+        if is_jd:
+            canonical_status = "已脱敏"
+        elif is_structure:
+            canonical_status = STRUCTURE_DEIDENTIFICATION_STATUS
+        elif is_entry:
+            canonical_status = ENTRY_DEIDENTIFICATION_STATUS
+        else:
+            canonical_status = "已脱敏"
+        if strict and deidentification_status != canonical_status:
             error("not_deidentified", record, "脱敏状态")
 
     for value, count in ids.items():
@@ -240,6 +304,12 @@ def validate_records(
         gaps.append(
             {"type": "structure_total", "actual": counts["structures"], "target": structure_target}
         )
+    if counts["entries"] < entry_target:
+        gaps.append({"type": "entry_total", "actual": counts["entries"], "target": entry_target})
+    if counts["ai_entries"] < ai_entry_target:
+        gaps.append(
+            {"type": "ai_entry_total", "actual": counts["ai_entries"], "target": ai_entry_target}
+        )
     for key, item in jd_strata.items():
         item["met"] = item["count"] >= item["target"]
         if not item["met"]:
@@ -248,6 +318,14 @@ def validate_records(
         item["met"] = item["count"] >= item["target"]
         if not item["met"]:
             gaps.append({"type": "structure_cell", "key": key, **item})
+    for key, item in entry_matrix.items():
+        item["met"] = item["count"] >= item["target"]
+        if not item["met"]:
+            gaps.append({"type": "entry_cell", "key": key, **item})
+    for key, item in ai_entry_matrix.items():
+        item["met"] = item["count"] >= item["target"]
+        if not item["met"]:
+            gaps.append({"type": "ai_entry_cell", "key": key, **item})
 
     domain_report = _concentration(domains, float(settings.get("max_domain_share", 0.5)))
     company_report = _concentration(companies, float(settings.get("max_company_share", 0.1)))
@@ -279,10 +357,19 @@ def validate_records(
             "total": counts["total"],
             "jd": counts["jd"],
             "structures": counts["structures"],
+            "entries": counts["entries"],
+            "ai_entries": counts["ai_entries"],
         },
-        "targets": {"jd": jd_target, "structures": structure_target},
+        "targets": {
+            "jd": jd_target,
+            "structures": structure_target,
+            "entries": entry_target,
+            "ai_entries": ai_entry_target,
+        },
         "jd_strata": jd_strata,
         "structure_matrix": structure_matrix,
+        "entry_matrix": entry_matrix,
+        "ai_entry_matrix": ai_entry_matrix,
         "concentration": {"domains": domain_report, "companies": company_report},
         "gaps": gaps,
         "errors": errors,
@@ -296,9 +383,9 @@ def format_text(report: dict[str, Any]) -> str:
     targets = report["targets"]
     lines = [
         f"质量检查: {'通过' if report['passed'] else '未通过'}（严格模式：{report['strict']}）",
-        f"数量: JD {counts['jd']}/{targets['jd']}，结构 {counts['structures']}/{targets['structures']}，总计 {counts['total']}",
+        f"数量: JD {counts['jd']}/{targets['jd']}，结构 {counts['structures']}/{targets['structures']}，条目 {counts['entries']}/{targets['entries']}，AI条目 {counts['ai_entries']}/{targets['ai_entries']}，总计 {counts['total']}",
         f"目标配额: {'已满足' if report['target_met'] else '存在缺口'}",
-        f"JD 分层: {len(report['jd_strata'])} 个；结构矩阵: {len(report['structure_matrix'])} 格",
+        f"JD 分层: {len(report['jd_strata'])} 个；结构矩阵: {len(report['structure_matrix'])} 格；条目矩阵: {len(report['entry_matrix'])} 格；AI条目矩阵: {len(report['ai_entry_matrix'])} 格",
         f"域名最大占比: {report['concentration']['domains']['max_share']:.2%}",
         f"企业最大占比: {report['concentration']['companies']['max_share']:.2%}",
         f"缺口数: {len(report['gaps'])}；错误数: {len(report['errors'])}",

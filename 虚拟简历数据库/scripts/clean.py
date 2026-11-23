@@ -9,7 +9,7 @@ from typing import Any
 
 from rapidfuzz import fuzz
 
-from common import SCHEMA_FIELDS, sha256_text
+from common import ENTRY_FIELD_TYPES, SCHEMA_FIELDS, sha256_text
 
 
 def clean_text(text: str) -> str:
@@ -67,10 +67,13 @@ def deduplicate_records(
 
     candidates: list[dict[str, Any]] = []
     candidate_indices: set[int] = set()
-    jd_indices = [index for index, record in enumerate(unique) if record["字段类型"] == "岗位JD"]
-    for offset, left in enumerate(jd_indices):
+    scanned_types = ("岗位JD",) + ENTRY_FIELD_TYPES
+    scan_indices = [
+        index for index, record in enumerate(unique) if record["字段类型"] in scanned_types
+    ]
+    for offset, left in enumerate(scan_indices):
         left_text = re.sub(r"\s+", "", unique[left]["文本内容"])
-        for right in jd_indices[offset + 1 :]:
+        for right in scan_indices[offset + 1 :]:
             right_text = re.sub(r"\s+", "", unique[right]["文本内容"])
             score = fuzz.ratio(left_text, right_text)
             if score >= threshold:
@@ -109,7 +112,7 @@ def deduplicate_records(
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="清洗、精确去重并标记 JD 近似重复候选")
+    parser = argparse.ArgumentParser(description="清洗、精确去重并标记 JD 与虚构条目近似重复候选")
     parser.add_argument("--input", required=True, help="输入 CSV")
     parser.add_argument("--output", required=True, help="输出 CSV")
     parser.add_argument("--report", help="可选去重报告 JSON")

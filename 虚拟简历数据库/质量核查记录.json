@@ -1,17 +1,18 @@
 {
-  "generated_at": "2026-11-20T21:22:44Z",
+  "generated_at": "2026-11-23T04:50:04Z",
   "dataset": {
     "path": "原始素材_岗位与简历结构.csv",
-    "bytes": 819871,
-    "sha256": "2f4bf065c4d311d3afc33c78ca0c89830e77afd4adfb9b4814405d1fb70475da",
+    "bytes": 1009922,
+    "sha256": "d7a4bbdd56cb6178e72da5c2555c7436e199ba2abb51f895466e65ea78bfcc91",
     "has_utf8_bom": true,
-    "crlf_lines": 481,
-    "lone_lf": 2999
+    "crlf_lines": 657,
+    "lone_lf": 3263
   },
   "counts": {
-    "total": 480,
+    "total": 656,
     "jd": 400,
     "structures": 80,
+    "entries": 176,
     "by_city": {
       "北京": 100,
       "上海": 100,
@@ -23,6 +24,24 @@
       "管理类": 100,
       "非常规认知型": 100,
       "常规型": 100
+    },
+    "entries_by_cell": {
+      "IT/技术类|教育经历条目": 11,
+      "IT/技术类|实习经历条目": 11,
+      "IT/技术类|项目经历条目": 11,
+      "IT/技术类|技能条目": 11,
+      "管理类|教育经历条目": 11,
+      "管理类|实习经历条目": 11,
+      "管理类|项目经历条目": 11,
+      "管理类|技能条目": 11,
+      "非常规认知型|教育经历条目": 11,
+      "非常规认知型|实习经历条目": 11,
+      "非常规认知型|项目经历条目": 11,
+      "非常规认知型|技能条目": 11,
+      "常规型|教育经历条目": 11,
+      "常规型|实习经历条目": 11,
+      "常规型|项目经历条目": 11,
+      "常规型|技能条目": 11
     }
   },
   "quality": {
@@ -30,13 +49,17 @@
     "passed": true,
     "target_met": true,
     "counts": {
-      "total": 480,
+      "total": 656,
       "jd": 400,
-      "structures": 80
+      "structures": 80,
+      "entries": 80,
+      "ai_entries": 96
     },
     "targets": {
       "jd": 400,
-      "structures": 80
+      "structures": 80,
+      "entries": 80,
+      "ai_entries": 96
     },
     "jd_strata": {
       "IT/技术类|北京": {
@@ -199,6 +222,570 @@
       "常规型|技能结构": {
         "count": 5,
         "target": 5,
+        "met": true
+      }
+    },
+    "entry_matrix": {
+      "IT/技术类|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      }
+    },
+    "ai_entry_matrix": {
+      "IT/技术类|教育经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|教育经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|教育经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|教育经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|教育经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|教育经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|实习经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|实习经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|实习经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|实习经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|实习经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|实习经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|项目经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|项目经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|项目经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|项目经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|项目经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|项目经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|技能条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|技能条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|技能条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|技能条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|技能条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "IT/技术类|技能条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|教育经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|教育经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|教育经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|教育经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|教育经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|教育经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|实习经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|实习经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|实习经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|实习经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|实习经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|实习经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|项目经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|项目经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|项目经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|项目经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|项目经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|项目经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|技能条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|技能条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|技能条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|技能条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|技能条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "管理类|技能条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|教育经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|教育经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|教育经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|教育经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|教育经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|教育经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|实习经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|实习经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|实习经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|实习经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|实习经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|实习经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|项目经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|项目经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|项目经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|项目经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|项目经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|项目经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|技能条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|技能条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|技能条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|技能条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|技能条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "非常规认知型|技能条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|教育经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|教育经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|教育经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|教育经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|教育经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|教育经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|实习经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|实习经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|实习经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|实习经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|实习经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|实习经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|项目经历条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|项目经历条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|项目经历条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|项目经历条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|项目经历条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|项目经历条目|L5": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|技能条目|L0": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|技能条目|L1": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|技能条目|L2": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|技能条目|L3": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|技能条目|L4": {
+        "count": 1,
+        "target": 1,
+        "met": true
+      },
+      "常规型|技能条目|L5": {
+        "count": 1,
+        "target": 1,
         "met": true
       }
     },
@@ -1541,7 +2128,7 @@
   },
   "review": {
     "status_counts": {
-      "自动校验通过（待人工复核）": 480
+      "自动校验通过（待人工复核）": 656
     },
     "structure_review_summary": [
       "ID、岗位类型、字段类型及编号连续，4类岗位×4类字段×5条共80条，16个矩阵单元均为5条；无重复ID、无重复正文。",
@@ -2124,7 +2711,7 @@
       "JD-XZB-2872941"
     ],
     "structure_excluded": [],
-    "review_note": "四城市候选人分别逐条复核；新增补采批次另做补充复核。",
+    "review_note": "四城市候选人分别逐条复核；新增补采批次另做补充复核；虚构条目逐条自查并做全量12字连续重合核验。",
     "review_files": [
       {
         "file": "jd_content_review_上海.json",
@@ -2181,6 +2768,6245 @@
         "failed": 0
       }
     ]
+  },
+  "entries": {
+    "count": 176,
+    "cell_matrix": {
+      "IT/技术类|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "IT/技术类|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "管理类|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "非常规认知型|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|教育经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|实习经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|项目经历条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      },
+      "常规型|技能条目": {
+        "count": 5,
+        "target": 5,
+        "met": true
+      }
+    },
+    "deidentification_status": "虚构化改写v1（不含原文）",
+    "review_status": "自动校验通过（待人工复核）",
+    "anti_plagiarism": {
+      "threshold": 12,
+      "reference_pages": [
+        "https://www.qmjianli.com/content/guide/3488",
+        "https://www.qmjianli.com/content/guide/3489",
+        "https://www.qmjianli.com/content/guide/3501",
+        "https://www.qmjianli.com/content/guide/3505",
+        "https://www.qmjianli.com/content/guide/3511",
+        "https://hb-green.91wllm.cn/news/view/aid/207169/tag/qzjq",
+        "https://www.cdau.edu.cn/Article/View?id=4034",
+        "https://career.csu.edu.cn/news/view/aid/154544/tag/xyzl"
+      ],
+      "local_corpus_rows": 560,
+      "checked": 96,
+      "anchor_hits": [],
+      "skeleton_overlaps": [
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": ".06某985高校计算机"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "GPA3.6/4.0,专"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "A3.6/4.0,专业排"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "85高校计算机科学与技术"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "6某985高校计算机科学"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "高校计算机科学与技术(本"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "5高校计算机科学与技术("
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "985高校计算机科学与技"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "9–2023.06某98"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "023.06某985高校"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "23.06某985高校计"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "某985高校计算机科学与"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "与技术(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": ".0,专业排名前15%。"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "6/4.0,专业排名前1"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": ".6/4.0,专业排名前"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "2023.06某985高"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "06某985高校计算机科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "–2023.06某985"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "09–2023.06某9"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "PA3.6/4.0,专业"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "校计算机科学与技术(本科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "机科学与技术(本科);主"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "技术(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "3.06某985高校计算"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "/4.0,专业排名前15"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "4.0,专业排名前15%"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "3.6/4.0,专业排名"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "计算机科学与技术(本科)"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "算机科学与技术(本科);"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "科学与技术(本科);主修"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-01",
+          "overlap": "学与技术(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": ".06某985高校计算机"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "GPA3.6/4.0,专"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "A3.6/4.0,专业排"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "85高校计算机科学与技术"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "6某985高校计算机科学"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "高校计算机科学与技术(本"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "5高校计算机科学与技术("
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "985高校计算机科学与技"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "9–2023.06某98"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "023.06某985高校"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "23.06某985高校计"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "某985高校计算机科学与"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "与技术(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": ".0,专业排名前15%。"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "6/4.0,专业排名前1"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": ".6/4.0,专业排名前"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "2023.06某985高"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "06某985高校计算机科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "–2023.06某985"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "09–2023.06某9"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "PA3.6/4.0,专业"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "校计算机科学与技术(本科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "机科学与技术(本科);主"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "技术(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "3.06某985高校计算"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "/4.0,专业排名前15"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "4.0,专业排名前15%"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "3.6/4.0,专业排名"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "计算机科学与技术(本科)"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "算机科学与技术(本科);"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "科学与技术(本科);主修"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-02",
+          "overlap": "学与技术(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": ".06某985高校计算机"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "GPA3.6/4.0,专"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "A3.6/4.0,专业排"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "85高校计算机科学与技术"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "6某985高校计算机科学"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "高校计算机科学与技术(本"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "5高校计算机科学与技术("
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "985高校计算机科学与技"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "9–2023.06某98"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "023.06某985高校"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "23.06某985高校计"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "某985高校计算机科学与"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "与技术(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": ".0,专业排名前15%。"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "6/4.0,专业排名前1"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "2023.06某985高"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": ".6/4.0,专业排名前"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "06某985高校计算机科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "–2023.06某985"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "09–2023.06某9"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "PA3.6/4.0,专业"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "校计算机科学与技术(本科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "机科学与技术(本科);主"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "技术(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "3.06某985高校计算"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "/4.0,专业排名前15"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "4.0,专业排名前15%"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "3.6/4.0,专业排名"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "计算机科学与技术(本科)"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "算机科学与技术(本科);"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "科学与技术(本科);主修"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-03",
+          "overlap": "学与技术(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": ".06某985高校计算机"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "GPA3.6/4.0,专"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "A3.6/4.0,专业排"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "85高校计算机科学与技术"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "6某985高校计算机科学"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "高校计算机科学与技术(本"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "5高校计算机科学与技术("
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "985高校计算机科学与技"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "9–2023.06某98"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "023.06某985高校"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "23.06某985高校计"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "某985高校计算机科学与"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "与技术(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": ".0,专业排名前15%。"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "6/4.0,专业排名前1"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": ".6/4.0,专业排名前"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "2023.06某985高"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "06某985高校计算机科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "–2023.06某985"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "09–2023.06某9"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "PA3.6/4.0,专业"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "校计算机科学与技术(本科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "机科学与技术(本科);主"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "技术(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "3.06某985高校计算"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "/4.0,专业排名前15"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "4.0,专业排名前15%"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "3.6/4.0,专业排名"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "计算机科学与技术(本科)"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "算机科学与技术(本科);"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "科学与技术(本科);主修"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-04",
+          "overlap": "学与技术(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": ".06某985高校计算机"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "GPA3.6/4.0,专"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "A3.6/4.0,专业排"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "85高校计算机科学与技术"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "6某985高校计算机科学"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "高校计算机科学与技术(本"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "5高校计算机科学与技术("
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "985高校计算机科学与技"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "9–2023.06某98"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "023.06某985高校"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "23.06某985高校计"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "某985高校计算机科学与"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "与技术(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": ".0,专业排名前15%。"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "6/4.0,专业排名前1"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": ".6/4.0,专业排名前"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "2023.06某985高"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "06某985高校计算机科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "–2023.06某985"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "09–2023.06某9"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "PA3.6/4.0,专业"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "校计算机科学与技术(本科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "机科学与技术(本科);主"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "技术(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "3.06某985高校计算"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "/4.0,专业排名前15"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "4.0,专业排名前15%"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "3.6/4.0,专业排名"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "计算机科学与技术(本科)"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "算机科学与技术(本科);"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "科学与技术(本科);主修"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-05",
+          "overlap": "学与技术(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": ".06某985高校计算机"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "GPA3.6/4.0,专"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "A3.6/4.0,专业排"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "85高校计算机科学与技术"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "6某985高校计算机科学"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "高校计算机科学与技术(本"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "5高校计算机科学与技术("
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "985高校计算机科学与技"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "9–2023.06某98"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "023.06某985高校"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "23.06某985高校计"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "某985高校计算机科学与"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "与技术(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": ".0,专业排名前15%。"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "6/4.0,专业排名前1"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": ".6/4.0,专业排名前"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "2023.06某985高"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "06某985高校计算机科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "–2023.06某985"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "09–2023.06某9"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "PA3.6/4.0,专业"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "校计算机科学与技术(本科"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "机科学与技术(本科);主"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "技术(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "3.06某985高校计算"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "/4.0,专业排名前15"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "4.0,专业排名前15%"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "3.6/4.0,专业排名"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "计算机科学与技术(本科)"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "算机科学与技术(本科);"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "科学与技术(本科);主修"
+        },
+        {
+          "素材ID": "VAI-IT-EDU-06",
+          "overlap": "学与技术(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "力资源管理(本科);主修"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": ".06某211高校人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "211高校人力资源管理("
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "校人力资源管理(本科);"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "某211高校人力资源管理"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "源管理(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "11高校人力资源管理(本"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "09–2023.06某2"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "023.06某211高校"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "资源管理(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "2023.06某211高"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "6某211高校人力资源管"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "高校人力资源管理(本科)"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "管理(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "1高校人力资源管理(本科"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "9–2023.06某21"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "人力资源管理(本科);主"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "–2023.06某211"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-01",
+          "overlap": "06某211高校人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "力资源管理(本科);主修"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": ".06某211高校人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "211高校人力资源管理("
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "校人力资源管理(本科);"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "某211高校人力资源管理"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "源管理(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "11高校人力资源管理(本"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "09–2023.06某2"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "023.06某211高校"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "资源管理(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "2023.06某211高"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "6某211高校人力资源管"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "高校人力资源管理(本科)"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "管理(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "1高校人力资源管理(本科"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "9–2023.06某21"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "人力资源管理(本科);主"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "–2023.06某211"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-02",
+          "overlap": "06某211高校人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "力资源管理(本科);主修"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": ".06某211高校人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "211高校人力资源管理("
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "校人力资源管理(本科);"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "某211高校人力资源管理"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "源管理(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "11高校人力资源管理(本"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "09–2023.06某2"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "023.06某211高校"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "资源管理(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "2023.06某211高"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "6某211高校人力资源管"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "高校人力资源管理(本科)"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "管理(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "1高校人力资源管理(本科"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "9–2023.06某21"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "人力资源管理(本科);主"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "–2023.06某211"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-03",
+          "overlap": "06某211高校人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "力资源管理(本科);主修"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": ".06某211高校人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "211高校人力资源管理("
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "校人力资源管理(本科);"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "某211高校人力资源管理"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "源管理(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "11高校人力资源管理(本"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "09–2023.06某2"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "023.06某211高校"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "资源管理(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "2023.06某211高"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "6某211高校人力资源管"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "高校人力资源管理(本科)"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "管理(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "1高校人力资源管理(本科"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "9–2023.06某21"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "人力资源管理(本科);主"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "–2023.06某211"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-04",
+          "overlap": "06某211高校人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "力资源管理(本科);主修"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": ".06某211高校人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "211高校人力资源管理("
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "校人力资源管理(本科);"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "某211高校人力资源管理"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "源管理(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "11高校人力资源管理(本"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "09–2023.06某2"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "023.06某211高校"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "资源管理(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "2023.06某211高"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "6某211高校人力资源管"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "高校人力资源管理(本科)"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "管理(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "1高校人力资源管理(本科"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "9–2023.06某21"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "人力资源管理(本科);主"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "–2023.06某211"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-05",
+          "overlap": "06某211高校人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "019.09–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "力资源管理(本科);主修"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": ".06某211高校人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "211高校人力资源管理("
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "校人力资源管理(本科);"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": ".09–2023.06某"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "某211高校人力资源管理"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "源管理(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "11高校人力资源管理(本"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "9.09–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "09–2023.06某2"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "023.06某211高校"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "资源管理(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "2023.06某211高"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "6某211高校人力资源管"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "高校人力资源管理(本科)"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "管理(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "2019.09–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "1高校人力资源管理(本科"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "9–2023.06某21"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "人力资源管理(本科);主"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "19.09–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "–2023.06某211"
+        },
+        {
+          "素材ID": "VAI-MGT-EDU-06",
+          "overlap": "06某211高校人力资源"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "9–2024.06某省属"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "营销(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "024.06某省属重点院"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "20.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "0.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "09–2024.06某省"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "2024.06某省属重点"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "24.06某省属重点院校"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "2020.09–2024"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "场营销(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "市场营销(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "–2024.06某省属重"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "020.09–2024."
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-01",
+          "overlap": "校市场营销(本科);主修"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "9–2024.06某省属"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "营销(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "024.06某省属重点院"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "20.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "0.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "09–2024.06某省"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "2024.06某省属重点"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "24.06某省属重点院校"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "2020.09–2024"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "场营销(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "市场营销(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "–2024.06某省属重"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "020.09–2024."
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-02",
+          "overlap": "校市场营销(本科);主修"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "9–2024.06某省属"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "营销(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "024.06某省属重点院"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "20.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "0.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "09–2024.06某省"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "2024.06某省属重点"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "24.06某省属重点院校"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "2020.09–2024"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "场营销(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "市场营销(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "–2024.06某省属重"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "020.09–2024."
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-03",
+          "overlap": "校市场营销(本科);主修"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "9–2024.06某省属"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "营销(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "024.06某省属重点院"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "20.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "0.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "09–2024.06某省"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "2024.06某省属重点"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "24.06某省属重点院校"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "2020.09–2024"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "场营销(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "市场营销(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "–2024.06某省属重"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "020.09–2024."
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-04",
+          "overlap": "校市场营销(本科);主修"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "9–2024.06某省属"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "营销(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "024.06某省属重点院"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "20.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "0.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "09–2024.06某省"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "2024.06某省属重点"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "24.06某省属重点院校"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "2020.09–2024"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "场营销(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "市场营销(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "–2024.06某省属重"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "020.09–2024."
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-05",
+          "overlap": "校市场营销(本科);主修"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "9–2024.06某省属"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "营销(本科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "024.06某省属重点院"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "20.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "0.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "09–2024.06某省"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "2024.06某省属重点"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "24.06某省属重点院校"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "2020.09–2024"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "场营销(本科);主修方向"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "市场营销(本科);主修方"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "–2024.06某省属重"
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "020.09–2024."
+        },
+        {
+          "素材ID": "VAI-NRC-EDU-06",
+          "overlap": "校市场营销(本科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "6某高职院校电子商务(专"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "校电子商务(专科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "021.09–2024."
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "电子商务(专科);主修方"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "商务(专科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "024.06某高职院校电"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "24.06某高职院校电子"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "21.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "–2024.06某高职院"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "4.06某高职院校电子商"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "1.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "09–2024.06某高"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "06某高职院校电子商务("
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "2021.09–2024"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "职院校电子商务(专科);"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "某高职院校电子商务(专科"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "高职院校电子商务(专科)"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "9–2024.06某高职"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "子商务(专科);主修方向"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "2024.06某高职院校"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": "院校电子商务(专科);主"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-01",
+          "overlap": ".06某高职院校电子商务"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "6某高职院校电子商务(专"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "校电子商务(专科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "021.09–2024."
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "电子商务(专科);主修方"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "商务(专科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "024.06某高职院校电"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "24.06某高职院校电子"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "21.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "–2024.06某高职院"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "4.06某高职院校电子商"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "1.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "09–2024.06某高"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "06某高职院校电子商务("
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "2021.09–2024"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "职院校电子商务(专科);"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "某高职院校电子商务(专科"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "高职院校电子商务(专科)"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "9–2024.06某高职"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "子商务(专科);主修方向"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "2024.06某高职院校"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": "院校电子商务(专科);主"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-02",
+          "overlap": ".06某高职院校电子商务"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "6某高职院校电子商务(专"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "校电子商务(专科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "021.09–2024."
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "电子商务(专科);主修方"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "商务(专科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "024.06某高职院校电"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "24.06某高职院校电子"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "21.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "–2024.06某高职院"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "4.06某高职院校电子商"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "1.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "09–2024.06某高"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "06某高职院校电子商务("
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "2021.09–2024"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "职院校电子商务(专科);"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "某高职院校电子商务(专科"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "高职院校电子商务(专科)"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "9–2024.06某高职"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "子商务(专科);主修方向"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "2024.06某高职院校"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": "院校电子商务(专科);主"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-03",
+          "overlap": ".06某高职院校电子商务"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "6某高职院校电子商务(专"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "校电子商务(专科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "021.09–2024."
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "电子商务(专科);主修方"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "商务(专科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "024.06某高职院校电"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "24.06某高职院校电子"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "21.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": ".06某高职院校电子商务"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "–2024.06某高职院"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "4.06某高职院校电子商"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "1.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "09–2024.06某高"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "06某高职院校电子商务("
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "2021.09–2024"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "职院校电子商务(专科);"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "某高职院校电子商务(专科"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "高职院校电子商务(专科)"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "9–2024.06某高职"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "子商务(专科);主修方向"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "2024.06某高职院校"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-04",
+          "overlap": "院校电子商务(专科);主"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "校电子商务(专科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "6某高职院校电子商务(专"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "021.09–2024."
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "电子商务(专科);主修方"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "商务(专科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "024.06某高职院校电"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "24.06某高职院校电子"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "21.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "–2024.06某高职院"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "4.06某高职院校电子商"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "1.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "09–2024.06某高"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "06某高职院校电子商务("
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "2021.09–2024"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "职院校电子商务(专科);"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "某高职院校电子商务(专科"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "高职院校电子商务(专科)"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "9–2024.06某高职"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "子商务(专科);主修方向"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "2024.06某高职院校"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": "院校电子商务(专科);主"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-05",
+          "overlap": ".06某高职院校电子商务"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "6某高职院校电子商务(专"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "校电子商务(专科);主修"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "021.09–2024."
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "电子商务(专科);主修方"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "商务(专科);主修方向:"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "024.06某高职院校电"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "24.06某高职院校电子"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "21.09–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "–2024.06某高职院"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "4.06某高职院校电子商"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "1.09–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "09–2024.06某高"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "06某高职院校电子商务("
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "2021.09–2024"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": ".09–2024.06某"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "职院校电子商务(专科);"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "某高职院校电子商务(专科"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "高职院校电子商务(专科)"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "9–2024.06某高职"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "子商务(专科);主修方向"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "2024.06某高职院校"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": "院校电子商务(专科);主"
+        },
+        {
+          "素材ID": "VAI-REG-EDU-06",
+          "overlap": ".06某高职院校电子商务"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "排查线上问题约30个,平"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "上问题约30个,平均定位"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "实习生|2022.06–"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "查线上问题约30个,平均"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "22.06–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": ".06–2022.09-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "限公司|后端开发实习生|"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": ",覆盖数据表约20张;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "生|2022.06–20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "与代码评审并整理接口文档"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "协助排查线上问题约30个"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "评审并整理接口文档约3份"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "有限公司|后端开发实习生"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "助排查线上问题约30个,"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "约30个,平均定位时长缩"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "平均定位时长缩短约两成;"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "潮信息科技有限公司|后端"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "2.06–2022.09"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "成;-参与代码评审并整理"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "盖数据表约20张;-协助"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "岚潮信息科技有限公司|后"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "-协助排查线上问题约30"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "开发实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "代码评审并整理接口文档约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "习生|2022.06–2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "|2022.06–202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "司|后端开发实习生|20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "短约两成;-参与代码评审"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "30个,平均定位时长缩短"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "时长缩短约两成;-参与代"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": ";-参与代码评审并整理接"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "缩短约两成;-参与代码评"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "审并整理接口文档约3份。"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "端开发实习生|2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "参与代码评审并整理接口文"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "发实习生|2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "信息科技有限公司|后端开"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "两成;-参与代码评审并整"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "科技有限公司|后端开发实"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "覆盖数据表约20张;-协"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": ";-协助排查线上问题约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "|后端开发实习生|202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "2022.06–2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "长缩短约两成;-参与代码"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "个,平均定位时长缩短约两"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "码评审并整理接口文档约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "线上问题约30个,平均定"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "题约30个,平均定位时长"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "息科技有限公司|后端开发"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "约两成;-参与代码评审并"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": ",平均定位时长缩短约两成"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "0个,平均定位时长缩短约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "公司|后端开发实习生|2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "问题约30个,平均定位时"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "技有限公司|后端开发实习"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "位时长缩短约两成;-参与"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "022.06–2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "均定位时长缩短约两成;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "定位时长缩短约两成;-参"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "-参与代码评审并整理接口"
+        },
+        {
+          "素材ID": "VAI-IT-INT-01",
+          "overlap": "后端开发实习生|2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "上问题约30个,平均定位"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "排查线上问题约30个,平"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "实习生|2022.06–"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "查线上问题约30个,平均"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "22.06–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": ".06–2022.09-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "限公司|后端开发实习生|"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": ",覆盖数据表约20张;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "生|2022.06–20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "与代码评审并整理接口文档"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "协助排查线上问题约30个"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "评审并整理接口文档约3份"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "有限公司|后端开发实习生"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "助排查线上问题约30个,"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "约30个,平均定位时长缩"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "平均定位时长缩短约两成;"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "成;-参与代码评审并整理"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "潮信息科技有限公司|后端"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "2.06–2022.09"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "盖数据表约20张;-协助"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "岚潮信息科技有限公司|后"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "-协助排查线上问题约30"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "开发实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "代码评审并整理接口文档约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "习生|2022.06–2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "|2022.06–202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "司|后端开发实习生|20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "短约两成;-参与代码评审"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "30个,平均定位时长缩短"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "时长缩短约两成;-参与代"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "缩短约两成;-参与代码评"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": ";-参与代码评审并整理接"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "审并整理接口文档约3份。"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "端开发实习生|2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "参与代码评审并整理接口文"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "发实习生|2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "信息科技有限公司|后端开"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "两成;-参与代码评审并整"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "科技有限公司|后端开发实"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "覆盖数据表约20张;-协"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": ";-协助排查线上问题约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "|后端开发实习生|202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "2022.06–2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "长缩短约两成;-参与代码"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "个,平均定位时长缩短约两"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "码评审并整理接口文档约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "线上问题约30个,平均定"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "题约30个,平均定位时长"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "息科技有限公司|后端开发"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "约两成;-参与代码评审并"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": ",平均定位时长缩短约两成"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "0个,平均定位时长缩短约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "公司|后端开发实习生|2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "问题约30个,平均定位时"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "技有限公司|后端开发实习"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "位时长缩短约两成;-参与"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "022.06–2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "均定位时长缩短约两成;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "定位时长缩短约两成;-参"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "-参与代码评审并整理接口"
+        },
+        {
+          "素材ID": "VAI-IT-INT-02",
+          "overlap": "后端开发实习生|2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "排查线上问题约30个,平"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "上问题约30个,平均定位"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "实习生|2022.06–"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "查线上问题约30个,平均"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "22.06–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "定位时长缩短约两成;-参"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": ".06–2022.09-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "限公司|后端开发实习生|"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": ",覆盖数据表约20张;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "生|2022.06–20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "与代码评审并整理接口文档"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "协助排查线上问题约30个"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "评审并整理接口文档约3份"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "有限公司|后端开发实习生"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "助排查线上问题约30个,"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "约30个,平均定位时长缩"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "平均定位时长缩短约两成;"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "成;-参与代码评审并整理"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "潮信息科技有限公司|后端"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "2.06–2022.09"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "盖数据表约20张;-协助"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "岚潮信息科技有限公司|后"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "-协助排查线上问题约30"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "开发实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "代码评审并整理接口文档约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "习生|2022.06–2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "|2022.06–202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "司|后端开发实习生|20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "短约两成;-参与代码评审"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "30个,平均定位时长缩短"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "时长缩短约两成;-参与代"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": ";-参与代码评审并整理接"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "缩短约两成;-参与代码评"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "审并整理接口文档约3份。"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "端开发实习生|2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "参与代码评审并整理接口文"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "发实习生|2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "信息科技有限公司|后端开"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "两成;-参与代码评审并整"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "科技有限公司|后端开发实"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "覆盖数据表约20张;-协"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": ";-协助排查线上问题约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "|后端开发实习生|202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "2022.06–2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "长缩短约两成;-参与代码"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "个,平均定位时长缩短约两"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "码评审并整理接口文档约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "线上问题约30个,平均定"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "题约30个,平均定位时长"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "息科技有限公司|后端开发"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "约两成;-参与代码评审并"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": ",平均定位时长缩短约两成"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "0个,平均定位时长缩短约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "公司|后端开发实习生|2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "问题约30个,平均定位时"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "技有限公司|后端开发实习"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "位时长缩短约两成;-参与"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "022.06–2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "均定位时长缩短约两成;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "-参与代码评审并整理接口"
+        },
+        {
+          "素材ID": "VAI-IT-INT-03",
+          "overlap": "后端开发实习生|2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "排查线上问题约30个,平"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "上问题约30个,平均定位"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "实习生|2022.06–"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "查线上问题约30个,平均"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "22.06–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": ".06–2022.09-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "限公司|后端开发实习生|"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": ",覆盖数据表约20张;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "生|2022.06–20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "与代码评审并整理接口文档"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "协助排查线上问题约30个"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "评审并整理接口文档约3份"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "有限公司|后端开发实习生"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "助排查线上问题约30个,"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "约30个,平均定位时长缩"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "平均定位时长缩短约两成;"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "成;-参与代码评审并整理"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "潮信息科技有限公司|后端"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "2.06–2022.09"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "盖数据表约20张;-协助"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "岚潮信息科技有限公司|后"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "-协助排查线上问题约30"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "开发实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "代码评审并整理接口文档约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "习生|2022.06–2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "|2022.06–202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "司|后端开发实习生|20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "短约两成;-参与代码评审"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "30个,平均定位时长缩短"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "时长缩短约两成;-参与代"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": ";-参与代码评审并整理接"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "缩短约两成;-参与代码评"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "审并整理接口文档约3份。"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "端开发实习生|2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "参与代码评审并整理接口文"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "发实习生|2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "信息科技有限公司|后端开"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "两成;-参与代码评审并整"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "科技有限公司|后端开发实"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "覆盖数据表约20张;-协"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "|后端开发实习生|202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": ";-协助排查线上问题约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "2022.06–2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "长缩短约两成;-参与代码"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "个,平均定位时长缩短约两"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "码评审并整理接口文档约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "线上问题约30个,平均定"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "题约30个,平均定位时长"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "息科技有限公司|后端开发"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "约两成;-参与代码评审并"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": ",平均定位时长缩短约两成"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "0个,平均定位时长缩短约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "公司|后端开发实习生|2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "问题约30个,平均定位时"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "技有限公司|后端开发实习"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "位时长缩短约两成;-参与"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "022.06–2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "均定位时长缩短约两成;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "定位时长缩短约两成;-参"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "-参与代码评审并整理接口"
+        },
+        {
+          "素材ID": "VAI-IT-INT-04",
+          "overlap": "后端开发实习生|2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "排查线上问题约30个,平"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "上问题约30个,平均定位"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "实习生|2022.06–"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "查线上问题约30个,平均"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "22.06–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": ".06–2022.09-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "限公司|后端开发实习生|"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": ",覆盖数据表约20张;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "生|2022.06–20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "与代码评审并整理接口文档"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "协助排查线上问题约30个"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "评审并整理接口文档约3份"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "有限公司|后端开发实习生"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "助排查线上问题约30个,"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "约30个,平均定位时长缩"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "平均定位时长缩短约两成;"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "成;-参与代码评审并整理"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "潮信息科技有限公司|后端"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "2.06–2022.09"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "盖数据表约20张;-协助"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "岚潮信息科技有限公司|后"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "-协助排查线上问题约30"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "开发实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "代码评审并整理接口文档约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "习生|2022.06–2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "|2022.06–202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "司|后端开发实习生|20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "短约两成;-参与代码评审"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "30个,平均定位时长缩短"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "时长缩短约两成;-参与代"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "缩短约两成;-参与代码评"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": ";-参与代码评审并整理接"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "审并整理接口文档约3份。"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "端开发实习生|2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "参与代码评审并整理接口文"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "发实习生|2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "信息科技有限公司|后端开"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "两成;-参与代码评审并整"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "科技有限公司|后端开发实"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "覆盖数据表约20张;-协"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": ";-协助排查线上问题约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "|后端开发实习生|202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "2022.06–2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "长缩短约两成;-参与代码"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "个,平均定位时长缩短约两"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "码评审并整理接口文档约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "线上问题约30个,平均定"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "题约30个,平均定位时长"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "息科技有限公司|后端开发"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "约两成;-参与代码评审并"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": ",平均定位时长缩短约两成"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "0个,平均定位时长缩短约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "公司|后端开发实习生|2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "问题约30个,平均定位时"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "技有限公司|后端开发实习"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "位时长缩短约两成;-参与"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "022.06–2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "均定位时长缩短约两成;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "定位时长缩短约两成;-参"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "-参与代码评审并整理接口"
+        },
+        {
+          "素材ID": "VAI-IT-INT-05",
+          "overlap": "后端开发实习生|2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "排查线上问题约30个,平"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "上问题约30个,平均定位"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "实习生|2022.06–"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "查线上问题约30个,平均"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "22.06–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": ".06–2022.09-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "限公司|后端开发实习生|"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": ",覆盖数据表约20张;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "生|2022.06–20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "与代码评审并整理接口文档"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "协助排查线上问题约30个"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "评审并整理接口文档约3份"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "有限公司|后端开发实习生"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "助排查线上问题约30个,"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "约30个,平均定位时长缩"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "平均定位时长缩短约两成;"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "成;-参与代码评审并整理"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "潮信息科技有限公司|后端"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "2.06–2022.09"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "盖数据表约20张;-协助"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "岚潮信息科技有限公司|后"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "-协助排查线上问题约30"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "开发实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "代码评审并整理接口文档约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "习生|2022.06–2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "|2022.06–202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "司|后端开发实习生|20"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "短约两成;-参与代码评审"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "30个,平均定位时长缩短"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "时长缩短约两成;-参与代"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": ";-参与代码评审并整理接"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "缩短约两成;-参与代码评"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "审并整理接口文档约3份。"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "端开发实习生|2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "参与代码评审并整理接口文"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "发实习生|2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "信息科技有限公司|后端开"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "两成;-参与代码评审并整"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "科技有限公司|后端开发实"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "覆盖数据表约20张;-协"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": ";-协助排查线上问题约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "|后端开发实习生|202"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "2022.06–2022"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "长缩短约两成;-参与代码"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "个,平均定位时长缩短约两"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "码评审并整理接口文档约3"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "线上问题约30个,平均定"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "题约30个,平均定位时长"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "息科技有限公司|后端开发"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "约两成;-参与代码评审并"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": ",平均定位时长缩短约两成"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "0个,平均定位时长缩短约"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "公司|后端开发实习生|2"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "问题约30个,平均定位时"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "技有限公司|后端开发实习"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "位时长缩短约两成;-参与"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "022.06–2022."
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "均定位时长缩短约两成;-"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "定位时长缩短约两成;-参"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "-参与代码评审并整理接口"
+        },
+        {
+          "素材ID": "VAI-IT-INT-06",
+          "overlap": "后端开发实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "琅人力资源服务有限公司|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "公司|人力资源实习生|2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "司|人力资源实习生|20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "限公司|人力资源实习生|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "服务有限公司|人力资源实"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "022.07–2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "实习生|2022.07–"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "资源服务有限公司|人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "力资源服务有限公司|人力"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "生|2022.07–20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "有限公司|人力资源实习生"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "资源实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "2.07–2022.08"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "源服务有限公司|人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "星琅人力资源服务有限公司"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "22.07–2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "人力资源实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "人力资源服务有限公司|人"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": ".07–2022.08-"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "习生|2022.07–2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "务有限公司|人力资源实习"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "|人力资源实习生|202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "力资源实习生|2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "|2022.07–202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-01",
+          "overlap": "2022.07–2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "琅人力资源服务有限公司|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "公司|人力资源实习生|2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "司|人力资源实习生|20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "限公司|人力资源实习生|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "服务有限公司|人力资源实"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "022.07–2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "实习生|2022.07–"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "资源服务有限公司|人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "力资源服务有限公司|人力"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "生|2022.07–20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "有限公司|人力资源实习生"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "资源实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "2.07–2022.08"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "源服务有限公司|人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "星琅人力资源服务有限公司"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "22.07–2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "人力资源实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "人力资源服务有限公司|人"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": ".07–2022.08-"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "习生|2022.07–2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "务有限公司|人力资源实习"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "|人力资源实习生|202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "力资源实习生|2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "|2022.07–202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-02",
+          "overlap": "2022.07–2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "琅人力资源服务有限公司|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "公司|人力资源实习生|2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "司|人力资源实习生|20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "限公司|人力资源实习生|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "服务有限公司|人力资源实"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "022.07–2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "实习生|2022.07–"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "资源服务有限公司|人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "力资源服务有限公司|人力"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "生|2022.07–20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "有限公司|人力资源实习生"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "资源实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "2.07–2022.08"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "源服务有限公司|人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "星琅人力资源服务有限公司"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "22.07–2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "人力资源实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "人力资源服务有限公司|人"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": ".07–2022.08-"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "习生|2022.07–2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "务有限公司|人力资源实习"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "|人力资源实习生|202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "力资源实习生|2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "|2022.07–202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-03",
+          "overlap": "2022.07–2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "琅人力资源服务有限公司|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "公司|人力资源实习生|2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "司|人力资源实习生|20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "限公司|人力资源实习生|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "服务有限公司|人力资源实"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "022.07–2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "实习生|2022.07–"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "资源服务有限公司|人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "力资源服务有限公司|人力"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "生|2022.07–20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "有限公司|人力资源实习生"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "资源实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "2.07–2022.08"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "源服务有限公司|人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "星琅人力资源服务有限公司"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "22.07–2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "人力资源实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "人力资源服务有限公司|人"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": ".07–2022.08-"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "习生|2022.07–2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "务有限公司|人力资源实习"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "|人力资源实习生|202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "力资源实习生|2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "|2022.07–202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-04",
+          "overlap": "2022.07–2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "琅人力资源服务有限公司|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "公司|人力资源实习生|2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "司|人力资源实习生|20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "限公司|人力资源实习生|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "服务有限公司|人力资源实"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "022.07–2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "实习生|2022.07–"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "资源服务有限公司|人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "力资源服务有限公司|人力"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "生|2022.07–20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "有限公司|人力资源实习生"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "资源实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "2.07–2022.08"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "源服务有限公司|人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "星琅人力资源服务有限公司"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "22.07–2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "人力资源实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "人力资源服务有限公司|人"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": ".07–2022.08-"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "习生|2022.07–2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "务有限公司|人力资源实习"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "|人力资源实习生|202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "力资源实习生|2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "|2022.07–202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-05",
+          "overlap": "2022.07–2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "琅人力资源服务有限公司|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "公司|人力资源实习生|2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "司|人力资源实习生|20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "限公司|人力资源实习生|"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "服务有限公司|人力资源实"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "022.07–2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "实习生|2022.07–"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "资源服务有限公司|人力资"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "力资源服务有限公司|人力"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "生|2022.07–20"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "有限公司|人力资源实习生"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "资源实习生|2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "2.07–2022.08"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "源服务有限公司|人力资源"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "星琅人力资源服务有限公司"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "22.07–2022.0"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "人力资源实习生|2022"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "人力资源服务有限公司|人"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": ".07–2022.08-"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "习生|2022.07–2"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "务有限公司|人力资源实习"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "|人力资源实习生|202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "力资源实习生|2022."
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "|2022.07–202"
+        },
+        {
+          "素材ID": "VAI-MGT-INT-06",
+          "overlap": "2022.07–2022"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": ",整理参考文件约30份;"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "限公司|市场研究实习生|"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "实习生|2023.06–"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "2023.06–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "|市场研究实习生|202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "23.06–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "习生|2023.06–2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "公司|市场研究实习生|2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "023.06–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "整理参考文件约30份;-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "司|市场研究实习生|20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "|2023.06–202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": ".06–2023.09-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "生|2023.06–20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "有限公司|市场研究实习生"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-01",
+          "overlap": "3.06–2023.09"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": ",整理参考文件约30份;"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "限公司|市场研究实习生|"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "实习生|2023.06–"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "2023.06–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "|市场研究实习生|202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "23.06–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "习生|2023.06–2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "公司|市场研究实习生|2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "023.06–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "整理参考文件约30份;-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "司|市场研究实习生|20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "|2023.06–202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": ".06–2023.09-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "生|2023.06–20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "有限公司|市场研究实习生"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-02",
+          "overlap": "3.06–2023.09"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": ",整理参考文件约30份;"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "限公司|市场研究实习生|"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "实习生|2023.06–"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "2023.06–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "|市场研究实习生|202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "23.06–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "习生|2023.06–2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "公司|市场研究实习生|2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "023.06–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "整理参考文件约30份;-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "司|市场研究实习生|20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "|2023.06–202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": ".06–2023.09-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "生|2023.06–20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "有限公司|市场研究实习生"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-03",
+          "overlap": "3.06–2023.09"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": ",整理参考文件约30份;"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "限公司|市场研究实习生|"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "实习生|2023.06–"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "2023.06–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "|市场研究实习生|202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "23.06–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "习生|2023.06–2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "公司|市场研究实习生|2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "023.06–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "整理参考文件约30份;-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "司|市场研究实习生|20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "|2023.06–202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": ".06–2023.09-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "生|2023.06–20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "有限公司|市场研究实习生"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-04",
+          "overlap": "3.06–2023.09"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": ",整理参考文件约30份;"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "限公司|市场研究实习生|"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "实习生|2023.06–"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "2023.06–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "|市场研究实习生|202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "23.06–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "习生|2023.06–2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "公司|市场研究实习生|2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "023.06–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "整理参考文件约30份;-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "司|市场研究实习生|20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "|2023.06–202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": ".06–2023.09-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "生|2023.06–20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "有限公司|市场研究实习生"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-05",
+          "overlap": "3.06–2023.09"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": ",整理参考文件约30份;"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "限公司|市场研究实习生|"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "实习生|2023.06–"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "2023.06–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "|市场研究实习生|202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "23.06–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "习生|2023.06–2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "公司|市场研究实习生|2"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "023.06–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "整理参考文件约30份;-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "司|市场研究实习生|20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "|2023.06–202"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": ".06–2023.09-"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "生|2023.06–20"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "有限公司|市场研究实习生"
+        },
+        {
+          "素材ID": "VAI-NRC-INT-06",
+          "overlap": "3.06–2023.09"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "实习生|2023.07–"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "习生|2023.07–2"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "|2023.07–202"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": ".07–2023.08-"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "生|2023.07–20"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "3.07–2023.08"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "2023.07–2023"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "23.07–2023.0"
+        },
+        {
+          "素材ID": "VAI-REG-INT-01",
+          "overlap": "023.07–2023."
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "实习生|2023.07–"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "习生|2023.07–2"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "|2023.07–202"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": ".07–2023.08-"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "生|2023.07–20"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "3.07–2023.08"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "2023.07–2023"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "23.07–2023.0"
+        },
+        {
+          "素材ID": "VAI-REG-INT-02",
+          "overlap": "023.07–2023."
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "实习生|2023.07–"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "习生|2023.07–2"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "|2023.07–202"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": ".07–2023.08-"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "生|2023.07–20"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "3.07–2023.08"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "2023.07–2023"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "23.07–2023.0"
+        },
+        {
+          "素材ID": "VAI-REG-INT-03",
+          "overlap": "023.07–2023."
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "实习生|2023.07–"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "习生|2023.07–2"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "|2023.07–202"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": ".07–2023.08-"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "生|2023.07–20"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "3.07–2023.08"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "2023.07–2023"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "23.07–2023.0"
+        },
+        {
+          "素材ID": "VAI-REG-INT-04",
+          "overlap": "023.07–2023."
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "实习生|2023.07–"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "习生|2023.07–2"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "|2023.07–202"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": ".07–2023.08-"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "生|2023.07–20"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "3.07–2023.08"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "2023.07–2023"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "23.07–2023.0"
+        },
+        {
+          "素材ID": "VAI-REG-INT-05",
+          "overlap": "023.07–2023."
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "实习生|2023.07–"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "习生|2023.07–2"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "|2023.07–202"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": ".07–2023.08-"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "生|2023.07–20"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "3.07–2023.08"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "2023.07–2023"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "23.07–2023.0"
+        },
+        {
+          "素材ID": "VAI-REG-INT-06",
+          "overlap": "023.07–2023."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "后端开发|2022.03"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "与联调与部署,系统按期交"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "|后端开发|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": ".03–2022.06-"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": ";-参与联调与部署,系统"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "发|2022.03–20"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "-参与联调与部署,系统按"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "调与部署,系统按期交付使"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "开发|2022.03–2"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "2.03–2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "端开发|2022.03–"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "2022.03–2022"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "联调与部署,系统按期交付"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "参与联调与部署,系统按期"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "022.03–2022."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "部署,系统按期交付使用。"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "|2022.03–202"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "22.03–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-01",
+          "overlap": "与部署,系统按期交付使用"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "后端开发|2022.03"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "与联调与部署,系统按期交"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "|后端开发|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": ".03–2022.06-"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": ";-参与联调与部署,系统"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "发|2022.03–20"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "-参与联调与部署,系统按"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "调与部署,系统按期交付使"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "开发|2022.03–2"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "2.03–2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "端开发|2022.03–"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "2022.03–2022"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "联调与部署,系统按期交付"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "参与联调与部署,系统按期"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "022.03–2022."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "部署,系统按期交付使用。"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "|2022.03–202"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "22.03–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-02",
+          "overlap": "与部署,系统按期交付使用"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "后端开发|2022.03"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "与联调与部署,系统按期交"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "|后端开发|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": ".03–2022.06-"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": ";-参与联调与部署,系统"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "发|2022.03–20"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "-参与联调与部署,系统按"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "调与部署,系统按期交付使"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "开发|2022.03–2"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "2.03–2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "端开发|2022.03–"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "2022.03–2022"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "联调与部署,系统按期交付"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "参与联调与部署,系统按期"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "022.03–2022."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "部署,系统按期交付使用。"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "|2022.03–202"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "22.03–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-03",
+          "overlap": "与部署,系统按期交付使用"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "后端开发|2022.03"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "与联调与部署,系统按期交"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "|后端开发|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": ".03–2022.06-"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": ";-参与联调与部署,系统"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "发|2022.03–20"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "-参与联调与部署,系统按"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "调与部署,系统按期交付使"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "开发|2022.03–2"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "2.03–2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "端开发|2022.03–"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "2022.03–2022"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "联调与部署,系统按期交付"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "参与联调与部署,系统按期"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "022.03–2022."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "部署,系统按期交付使用。"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "|2022.03–202"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "22.03–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-04",
+          "overlap": "与部署,系统按期交付使用"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "后端开发|2022.03"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "与联调与部署,系统按期交"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "|后端开发|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": ".03–2022.06-"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": ";-参与联调与部署,系统"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "发|2022.03–20"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "-参与联调与部署,系统按"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "调与部署,系统按期交付使"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "开发|2022.03–2"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "2.03–2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "端开发|2022.03–"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "2022.03–2022"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "联调与部署,系统按期交付"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "参与联调与部署,系统按期"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "022.03–2022."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "部署,系统按期交付使用。"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "|2022.03–202"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "22.03–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-05",
+          "overlap": "与部署,系统按期交付使用"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "后端开发|2022.03"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "与联调与部署,系统按期交"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "|后端开发|2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": ".03–2022.06-"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": ";-参与联调与部署,系统"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "发|2022.03–20"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "-参与联调与部署,系统按"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "调与部署,系统按期交付使"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "开发|2022.03–2"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "2.03–2022.06"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "端开发|2022.03–"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "2022.03–2022"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "联调与部署,系统按期交付"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "参与联调与部署,系统按期"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "022.03–2022."
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "部署,系统按期交付使用。"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "|2022.03–202"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "22.03–2022.0"
+        },
+        {
+          "素材ID": "VAI-IT-PRJ-06",
+          "overlap": "与部署,系统按期交付使用"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "目助理|2023.03–"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "项目助理|2023.03"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "|项目助理|2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-01",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "目助理|2023.03–"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "项目助理|2023.03"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "|项目助理|2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-02",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "目助理|2023.03–"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "项目助理|2023.03"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "|项目助理|2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-03",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "目助理|2023.03–"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "项目助理|2023.03"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "|项目助理|2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-04",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "目助理|2023.03–"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "项目助理|2023.03"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "|项目助理|2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-05",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "目助理|2023.03–"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "项目助理|2023.03"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "|项目助理|2023.0"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-MGT-PRJ-06",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-01",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-02",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-03",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-04",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-05",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "23.03–2023.0"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "3.03–2023.06"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "助理|2023.03–2"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "理|2023.03–20"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "|2023.03–202"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "023.03–2023."
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": ".03–2023.06-"
+        },
+        {
+          "素材ID": "VAI-NRC-PRJ-06",
+          "overlap": "2023.03–2023"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-01",
+          "overlap": "|2024.03–202"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-01",
+          "overlap": "024.03–2024."
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-01",
+          "overlap": ".03–2024.06-"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-01",
+          "overlap": "2024.03–2024"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-01",
+          "overlap": "24.03–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-01",
+          "overlap": "4.03–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-02",
+          "overlap": "|2024.03–202"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-02",
+          "overlap": "024.03–2024."
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-02",
+          "overlap": ".03–2024.06-"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-02",
+          "overlap": "2024.03–2024"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-02",
+          "overlap": "24.03–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-02",
+          "overlap": "4.03–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-03",
+          "overlap": "|2024.03–202"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-03",
+          "overlap": "024.03–2024."
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-03",
+          "overlap": ".03–2024.06-"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-03",
+          "overlap": "2024.03–2024"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-03",
+          "overlap": "24.03–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-03",
+          "overlap": "4.03–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-04",
+          "overlap": "|2024.03–202"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-04",
+          "overlap": "024.03–2024."
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-04",
+          "overlap": ".03–2024.06-"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-04",
+          "overlap": "2024.03–2024"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-04",
+          "overlap": "24.03–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-04",
+          "overlap": "4.03–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-05",
+          "overlap": "|2024.03–202"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-05",
+          "overlap": "024.03–2024."
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-05",
+          "overlap": ".03–2024.06-"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-05",
+          "overlap": "2024.03–2024"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-05",
+          "overlap": "24.03–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-05",
+          "overlap": "4.03–2024.06"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-06",
+          "overlap": "|2024.03–202"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-06",
+          "overlap": "024.03–2024."
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-06",
+          "overlap": ".03–2024.06-"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-06",
+          "overlap": "2024.03–2024"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-06",
+          "overlap": "24.03–2024.0"
+        },
+        {
+          "素材ID": "VAI-REG-PRJ-06",
+          "overlap": "4.03–2024.06"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-01",
+          "overlap": ");报告撰写(熟练,输出"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-02",
+          "overlap": ");报告撰写(熟练,输出"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-03",
+          "overlap": ");报告撰写(熟练,输出"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-04",
+          "overlap": ");报告撰写(熟练,输出"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-05",
+          "overlap": ");报告撰写(熟练,输出"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-06",
+          "overlap": ");报告撰写(熟练,输出"
+        },
+        {
+          "素材ID": "VAI-NRC-SKL-06",
+          "overlap": "计);报告撰写(熟练,输"
+        }
+      ],
+      "sibling_shared_exemptions": 0,
+      "anchor_hit_count": 0,
+      "skeleton_overlap_count": 1531
+    },
+    "fictional_org_name_check": {
+      "checked": 16,
+      "collisions": 0,
+      "detail_file": "虚构机构名登记表.csv",
+      "channel": "校招宝公开企业档案API精确匹配"
+    },
+    "authoring_note": "条目为虚构化改写v1：句式模式参考公开指南，槽位用受控词表与通用量化占位；院校为类别泛称；不含范文原文。"
   },
   "dedup": {
     "input_count": 499,
@@ -3152,7 +9978,177 @@
         "title": "综合文员【27届校招】",
         "city": "广州"
       }
-    ]
+    ],
+    "final_rescan": {
+      "input_count": 560,
+      "output_count": 560,
+      "exact_removed": [],
+      "near_duplicate_candidates": [
+        {
+          "left_id": "JD-XZB-3105490",
+          "right_id": "JD-XZB-3105489",
+          "score": 98.18,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105490",
+          "right_id": "JD-XZB-3105491",
+          "score": 97.04,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105490",
+          "right_id": "JD-XZB-2876651",
+          "score": 97.18,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105490",
+          "right_id": "JD-XZB-2876652",
+          "score": 96.46,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-2784713",
+          "right_id": "JD-XZB-2784782",
+          "score": 99.61,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784713",
+          "right_id": "JD-XZB-2784635",
+          "score": 99.48,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784713",
+          "right_id": "JD-XZB-2784605",
+          "score": 99.35,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784713",
+          "right_id": "JD-XZB-2784615",
+          "score": 99.35,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784782",
+          "right_id": "JD-XZB-2784635",
+          "score": 99.48,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784782",
+          "right_id": "JD-XZB-2784605",
+          "score": 99.48,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784782",
+          "right_id": "JD-XZB-2784615",
+          "score": 99.48,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-18580103",
+          "right_id": "JD-XZB-18580077",
+          "score": 97.09,
+          "group_id": "NEAR-b4e7d8d31610"
+        },
+        {
+          "left_id": "JD-XZB-36270420",
+          "right_id": "JD-XZB-36869766",
+          "score": 95.98,
+          "group_id": "NEAR-91cf76637ca9"
+        },
+        {
+          "left_id": "JD-XZB-2784635",
+          "right_id": "JD-XZB-2784605",
+          "score": 99.61,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784635",
+          "right_id": "JD-XZB-2784615",
+          "score": 99.61,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-2784605",
+          "right_id": "JD-XZB-2784615",
+          "score": 99.61,
+          "group_id": "NEAR-60bad1f5ab00"
+        },
+        {
+          "left_id": "JD-XZB-36787922",
+          "right_id": "JD-XZB-36838895",
+          "score": 95.44,
+          "group_id": "NEAR-89cfc4f90622"
+        },
+        {
+          "left_id": "JD-XZB-36787922",
+          "right_id": "JD-XZB-36869767",
+          "score": 92.93,
+          "group_id": "NEAR-89cfc4f90622"
+        },
+        {
+          "left_id": "JD-XZB-36838895",
+          "right_id": "JD-XZB-36869767",
+          "score": 92.35,
+          "group_id": "NEAR-89cfc4f90622"
+        },
+        {
+          "left_id": "JD-XZB-3105489",
+          "right_id": "JD-XZB-3105491",
+          "score": 98.01,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105489",
+          "right_id": "JD-XZB-2876651",
+          "score": 98.15,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105489",
+          "right_id": "JD-XZB-2876652",
+          "score": 97.43,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105491",
+          "right_id": "JD-XZB-2876651",
+          "score": 98.99,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-3105491",
+          "right_id": "JD-XZB-2876652",
+          "score": 98.27,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-2876651",
+          "right_id": "JD-XZB-2876652",
+          "score": 98.41,
+          "group_id": "NEAR-5a16b9e3f652"
+        },
+        {
+          "left_id": "JD-XZB-2671073",
+          "right_id": "JD-XZB-36788816",
+          "score": 93.01,
+          "group_id": "NEAR-1eb6f18f76d1"
+        }
+      ],
+      "decisions": {
+        "policy": "近似重复只核对不删除；仅同城市、同企业、同岗位名称才合并（任务一既定政策）",
+        "exact_removed": [],
+        "near_pairs_reviewed": 26,
+        "near_pairs_involving_entries": [],
+        "conclusion": "26 组候选全部为任务一已复核的 JD 模板相似组，不涉及 VRE 条目；均为独立岗位发布，保留全部行并清空重复组ID"
+      }
+    }
   },
   "sources": {
     "repeated_url_groups": {
