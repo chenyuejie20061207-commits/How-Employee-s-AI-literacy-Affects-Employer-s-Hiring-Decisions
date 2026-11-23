@@ -33,6 +33,7 @@ SCHEMA_FIELDS = (
     "企业性质",
     "企业规模",
     "分类理由",
+    "AI素养信号等级",
     "文本哈希",
     "重复组ID",
     "脱敏状态",
@@ -51,6 +52,10 @@ DEIDENTIFICATION_STATUSES = (
     STRUCTURE_DEIDENTIFICATION_STATUS,
     ENTRY_DEIDENTIFICATION_STATUS,
 )
+AI_SIGNAL_LEVELS = ("L0", "L1", "L2", "L3", "L4", "L5")
+AI_LEVEL_NA = "不适用"
+AI_SIGNAL_VALUES = AI_SIGNAL_LEVELS + (AI_LEVEL_NA,)
+AI_ENTRY_PREFIX = "VAI"
 JOB_TYPE_ABBR = {"IT/技术类": "IT", "管理类": "MGT", "非常规认知型": "NRC", "常规型": "REG"}
 MODULE_ABBR = {
     "教育经历条目": "EDU",

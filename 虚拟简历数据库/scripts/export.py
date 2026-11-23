@@ -29,7 +29,9 @@ def read_csv(path: str | Path) -> list[dict[str, str]]:
     with Path(path).open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         if tuple(reader.fieldnames or ()) != SCHEMA_FIELDS:
-            raise ValueError("CSV 表头与规定的 23 字段 schema 不一致")
+            raise ValueError(
+                f"CSV 表头与规定的 {len(SCHEMA_FIELDS)} 字段 schema 不一致"
+            )
         return [{field: row.get(field, "") or "" for field in SCHEMA_FIELDS} for row in reader]
 
 

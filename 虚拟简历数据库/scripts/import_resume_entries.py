@@ -16,6 +16,9 @@ from typing import Any
 
 from clean import clean_text
 from common import (
+    AI_ENTRY_PREFIX,
+    AI_LEVEL_NA,
+    AI_SIGNAL_LEVELS,
     ENTRY_DEIDENTIFICATION_STATUS,
     ENTRY_FIELD_TYPES,
     JOB_TYPE_ABBR,
@@ -29,8 +32,9 @@ from deidentify import scan_pii
 from manual_import import RAW_RESUME_MARKERS, UnsafeResumeInput
 
 TIME_RE = re.compile(r"\d{4}\.\d{2}–\d{4}\.\d{2}")
-ENTRY_ID_RE = re.compile(r"^VRE-(IT|MGT|NRC|REG)-(EDU|INT|PRJ|SKL)-\d{2}$")
+ENTRY_ID_RE = re.compile(r"^(VRE|VAI)-(IT|MGT|NRC|REG)-(EDU|INT|PRJ|SKL)-(\d{2})$")
 ENTRY_MIN, ENTRY_MAX = 30, 400
+AI_ENTRY_MIN, AI_ENTRY_MAX = 80, 300
 PROFICIENCY_WORDS = ("熟练", "掌握", "了解")
 DEGREE_WORDS = ("本科", "硕士", "专科")
 
@@ -76,14 +80,26 @@ def import_entry_record(values: dict[str, Any]) -> dict[str, str]:
         raise UnsafeResumeInput("字段类型必须是教育经历、实习经历、项目经历或技能条目")
     job_type = str(values.get("岗位类型", ""))
     entry_id = str(values.get("素材ID", "")).strip()
-    if not ENTRY_ID_RE.match(entry_id):
-        raise UnsafeResumeInput(f"素材ID不符合 VRE- 命名规则: {entry_id}")
-    abbr = ENTRY_ID_RE.match(entry_id)
-    assert abbr is not None
-    if JOB_TYPE_ABBR.get(job_type) != abbr.group(1) or MODULE_ABBR.get(field_type) != abbr.group(2):
+    m = ENTRY_ID_RE.match(entry_id)
+    if not m:
+        raise UnsafeResumeInput(f"素材ID不符合 VRE-/VAI- 命名规则: {entry_id}")
+    family, job_abbr, mod_abbr, seq = m.group(1), m.group(2), m.group(3), m.group(4)
+    if JOB_TYPE_ABBR.get(job_type) != job_abbr or MODULE_ABBR.get(field_type) != mod_abbr:
         raise UnsafeResumeInput("素材ID与岗位类型/字段类型不一致")
 
+    ai_level = str(values.get("AI素养信号等级", "")).strip()
+    if family == AI_ENTRY_PREFIX:
+        if ai_level not in AI_SIGNAL_LEVELS:
+            raise UnsafeResumeInput("VAI 条目必须标注 AI素养信号等级 L0–L5")
+        if int(seq) != int(ai_level[1:]) + 1:
+            raise UnsafeResumeInput("VAI 条目序号与 AI素养信号等级不一致（01=L0 … 06=L5）")
+    else:
+        if ai_level != AI_LEVEL_NA:
+            raise UnsafeResumeInput("VRE 中性条目的 AI素养信号等级必须是“不适用”")
+
     text = validate_entry_text(field_type, str(values.get("文本内容", "")))
+    if family == AI_ENTRY_PREFIX and not AI_ENTRY_MIN <= len(text) <= AI_ENTRY_MAX:
+        raise UnsafeResumeInput(f"VAI 条目长度 {len(text)} 超出 {AI_ENTRY_MIN}-{AI_ENTRY_MAX}")
 
     source_url = normalize_url(str(values.get("来源URL", "")))
     other_url = str(values.get("其他来源URL", "")).strip()
@@ -119,6 +135,7 @@ def import_entry_record(values: dict[str, Any]) -> dict[str, str]:
             "其他来源URL": other_url,
             "原始岗位ID": "",
             "原始岗位名称": "",
+            "AI素养信号等级": ai_level,
             "文本哈希": sha256_text(text),
             "重复组ID": "",
             "脱敏状态": ENTRY_DEIDENTIFICATION_STATUS,
